@@ -1,0 +1,1766 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'express' ]
+2 info using npm@1.1.32
+3 info using node@v0.8.0
+4 verbose config file /Users/rcameron/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/package.json
+8 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/socket.io/package.json
+9 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/socket.io-client/package.json
+10 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/package.json
+11 verbose cache add [ 'express', null ]
+12 silly cache add name=undefined spec="express" args=["express",null]
+13 verbose parsed url { pathname: 'express', path: 'express', href: 'express' }
+14 verbose addNamed [ 'express', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly addNameRange { name: 'express', range: '', hasData: false }
+17 verbose url raw express
+18 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+19 verbose url resolved https://registry.npmjs.org/express
+20 verbose etag "AXYOLXJ5G938N1XTY73YJW65V"
+21 http GET https://registry.npmjs.org/express
+22 http 200 https://registry.npmjs.org/express
+23 silly registry.get cb [ 200,
+23 silly registry.get   { vary: 'Accept',
+23 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+23 silly registry.get     etag: '"K42TVMS5KC3K1ZN5L61W2TP1"',
+23 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:55 GMT',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'content-length': '162773' } ]
+24 silly addNameRange number 2 { name: 'express', range: '', hasData: true }
+25 silly addNameRange versions [ 'express',
+25 silly addNameRange   [ '0.14.0',
+25 silly addNameRange     '0.14.1',
+25 silly addNameRange     '1.0.0beta',
+25 silly addNameRange     '1.0.0beta2',
+25 silly addNameRange     '1.0.0rc',
+25 silly addNameRange     '1.0.0rc2',
+25 silly addNameRange     '1.0.0rc3',
+25 silly addNameRange     '1.0.0rc4',
+25 silly addNameRange     '1.0.0',
+25 silly addNameRange     '1.0.1',
+25 silly addNameRange     '1.0.2',
+25 silly addNameRange     '1.0.3',
+25 silly addNameRange     '1.0.4',
+25 silly addNameRange     '1.0.5',
+25 silly addNameRange     '1.0.6',
+25 silly addNameRange     '1.0.7',
+25 silly addNameRange     '3.0.0alpha3',
+25 silly addNameRange     '3.0.0alpha4',
+25 silly addNameRange     '3.0.0alpha5',
+25 silly addNameRange     '3.0.0beta1',
+25 silly addNameRange     '3.0.0beta2',
+25 silly addNameRange     '3.0.0beta3',
+25 silly addNameRange     '2.5.10',
+25 silly addNameRange     '3.0.0beta4',
+25 silly addNameRange     '2.5.11',
+25 silly addNameRange     '3.0.0beta5' ] ]
+26 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-3.0.0beta5.tgz',
+26 verbose addRemoteTarball   '6fbd60684c3b09a454548b18a41dc9a9331788eb' ]
+27 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351835724-0.37400891655124724/tmp.tgz
+28 http GET https://registry.npmjs.org/express/-/express-3.0.0beta5.tgz
+29 silly shasum updated bytes 33545
+30 info shasum 6fbd60684c3b09a454548b18a41dc9a9331788eb
+30 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351835724-0.37400891655124724/tmp.tgz
+31 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351835724-0.37400891655124724/tmp.tgz
+32 silly gunzTarPerm modes [ '755', '644' ]
+33 silly gunzTarPerm extractEntry package.json
+34 silly gunzTarPerm extractEntry .npmignore
+35 silly gunzTarPerm extractEntry LICENSE
+36 silly gunzTarPerm extractEntry client.js
+37 silly gunzTarPerm extractEntry index.js
+38 silly gunzTarPerm extractEntry test.js
+39 silly gunzTarPerm extractEntry .travis.yml
+40 silly gunzTarPerm extractEntry History.md
+41 silly gunzTarPerm extractEntry Makefile
+42 silly gunzTarPerm extractEntry bin/express
+43 silly gunzTarPerm extractEntry Readme.md
+44 silly gunzTarPerm extractEntry lib/application.js
+45 silly gunzTarPerm extractEntry lib/express.js
+46 silly gunzTarPerm extractEntry lib/middleware.js
+47 silly gunzTarPerm extractEntry lib/request.js
+48 silly gunzTarPerm extractEntry lib/response.js
+49 silly gunzTarPerm extractEntry lib/utils.js
+50 silly gunzTarPerm extractEntry lib/view.js
+51 silly gunzTarPerm extractEntry lib/router/index.js
+52 silly gunzTarPerm extractEntry lib/router/route.js
+53 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351835724-0.37400891655124724/package/package.json
+54 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351835724-0.37400891655124724/package/package.json
+55 verbose tar pack [ '/Users/rcameron/.npm/express/3.0.0beta5/package.tgz',
+55 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351835724-0.37400891655124724/package' ]
+56 verbose tarball /Users/rcameron/.npm/express/3.0.0beta5/package.tgz
+57 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351835724-0.37400891655124724/package
+58 verbose tar unpack /Users/rcameron/.npm/express/3.0.0beta5/package.tgz
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm extractEntry .npmignore
+62 silly gunzTarPerm extractEntry LICENSE
+63 silly gunzTarPerm extractEntry client.js
+64 silly gunzTarPerm extractEntry index.js
+65 silly gunzTarPerm extractEntry test.js
+66 silly gunzTarPerm extractEntry .travis.yml
+67 silly gunzTarPerm extractEntry History.md
+68 silly gunzTarPerm extractEntry Makefile
+69 silly gunzTarPerm extractEntry bin/express
+70 silly gunzTarPerm extractEntry Readme.md
+71 silly gunzTarPerm extractEntry lib/application.js
+72 silly gunzTarPerm extractEntry lib/express.js
+73 silly gunzTarPerm extractEntry lib/middleware.js
+74 silly gunzTarPerm extractEntry lib/request.js
+75 silly gunzTarPerm extractEntry lib/response.js
+76 silly gunzTarPerm extractEntry lib/utils.js
+77 silly gunzTarPerm extractEntry lib/view.js
+78 silly gunzTarPerm extractEntry lib/router/index.js
+79 silly gunzTarPerm extractEntry lib/router/route.js
+80 verbose read json /Users/rcameron/.npm/express/3.0.0beta5/package/package.json
+81 silly shasum updated bytes 33539
+82 info shasum 769ad1c4360a43d909e6874a944b461683a71872
+82 info shasum /Users/rcameron/.npm/express/3.0.0beta5/package.tgz
+83 verbose from cache /Users/rcameron/.npm/express/3.0.0beta5/package/package.json
+84 verbose chmod /Users/rcameron/.npm/express/3.0.0beta5/package.tgz 644
+85 verbose chown /Users/rcameron/.npm/express/3.0.0beta5/package.tgz [ 502, 502 ]
+86 silly resolved [ { name: 'express',
+86 silly resolved     description: 'Sinatra inspired web development framework',
+86 silly resolved     version: '3.0.0beta5',
+86 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+86 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+86 silly resolved     dependencies:
+86 silly resolved      { connect: '2.3.6',
+86 silly resolved        commander: '0.6.1',
+86 silly resolved        'range-parser': '0.0.4',
+86 silly resolved        mkdirp: '0.3.3',
+86 silly resolved        cookie: '0.0.3',
+86 silly resolved        crc: '0.2.0',
+86 silly resolved        fresh: '0.1.0',
+86 silly resolved        methods: '0.0.1',
+86 silly resolved        debug: '*' },
+86 silly resolved     devDependencies:
+86 silly resolved      { ejs: '*',
+86 silly resolved        mocha: '*',
+86 silly resolved        jade: '*',
+86 silly resolved        hjs: '*',
+86 silly resolved        stylus: '*',
+86 silly resolved        should: '*',
+86 silly resolved        'connect-redis': '*',
+86 silly resolved        'github-flavored-markdown': '*',
+86 silly resolved        supertest: '0.0.1' },
+86 silly resolved     publishConfig: { tag: '3.0' },
+86 silly resolved     keywords:
+86 silly resolved      [ 'express',
+86 silly resolved        'framework',
+86 silly resolved        'sinatra',
+86 silly resolved        'web',
+86 silly resolved        'rest',
+86 silly resolved        'restful',
+86 silly resolved        'router' ],
+86 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express' },
+86 silly resolved     main: 'index',
+86 silly resolved     bin: { express: './bin/express' },
+86 silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+86 silly resolved     engines: { node: '*' },
+86 silly resolved     _id: 'express@3.0.0beta5',
+86 silly resolved     dist: { shasum: '769ad1c4360a43d909e6874a944b461683a71872' },
+86 silly resolved     _from: 'express' } ]
+87 info install express@3.0.0beta5 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder
+88 info installOne express@3.0.0beta5
+89 verbose from cache /Users/rcameron/.npm/express/3.0.0beta5/package/package.json
+90 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express unbuild
+91 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/package.json
+92 verbose tar unpack /Users/rcameron/.npm/express/3.0.0beta5/package.tgz
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry package.json
+95 silly gunzTarPerm extractEntry .npmignore
+96 silly gunzTarPerm extractEntry LICENSE
+97 silly gunzTarPerm extractEntry client.js
+98 silly gunzTarPerm extractEntry index.js
+99 silly gunzTarPerm extractEntry test.js
+100 silly gunzTarPerm extractEntry .travis.yml
+101 silly gunzTarPerm extractEntry History.md
+102 silly gunzTarPerm extractEntry Makefile
+103 silly gunzTarPerm extractEntry bin/express
+104 silly gunzTarPerm extractEntry Readme.md
+105 silly gunzTarPerm extractEntry lib/application.js
+106 silly gunzTarPerm extractEntry lib/express.js
+107 silly gunzTarPerm extractEntry lib/middleware.js
+108 silly gunzTarPerm extractEntry lib/request.js
+109 silly gunzTarPerm extractEntry lib/response.js
+110 silly gunzTarPerm extractEntry lib/utils.js
+111 silly gunzTarPerm extractEntry lib/view.js
+112 silly gunzTarPerm extractEntry lib/router/index.js
+113 silly gunzTarPerm extractEntry lib/router/route.js
+114 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/package.json
+115 info preinstall express@3.0.0beta5
+116 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/package.json
+117 verbose readDependencies using package.json deps
+118 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/package.json
+119 verbose readDependencies using package.json deps
+120 verbose cache add [ 'connect@2.3.6', null ]
+121 silly cache add name=undefined spec="connect@2.3.6" args=["connect@2.3.6",null]
+122 verbose parsed url { pathname: 'connect@2.3.6',
+122 verbose parsed url   path: 'connect@2.3.6',
+122 verbose parsed url   href: 'connect@2.3.6' }
+123 silly cache add name="connect" spec="2.3.6" args=["connect","2.3.6"]
+124 verbose parsed url { pathname: '2.3.6', path: '2.3.6', href: '2.3.6' }
+125 verbose addNamed [ 'connect', '2.3.6' ]
+126 verbose addNamed [ '2.3.6', '2.3.6' ]
+127 verbose cache add [ 'commander@0.6.1', null ]
+128 silly cache add name=undefined spec="commander@0.6.1" args=["commander@0.6.1",null]
+129 verbose parsed url { pathname: 'commander@0.6.1',
+129 verbose parsed url   path: 'commander@0.6.1',
+129 verbose parsed url   href: 'commander@0.6.1' }
+130 silly cache add name="commander" spec="0.6.1" args=["commander","0.6.1"]
+131 verbose parsed url { pathname: '0.6.1', path: '0.6.1', href: '0.6.1' }
+132 verbose addNamed [ 'commander', '0.6.1' ]
+133 verbose addNamed [ '0.6.1', '0.6.1' ]
+134 verbose cache add [ 'range-parser@0.0.4', null ]
+135 silly cache add name=undefined spec="range-parser@0.0.4" args=["range-parser@0.0.4",null]
+136 verbose parsed url { pathname: 'range-parser@0.0.4',
+136 verbose parsed url   path: 'range-parser@0.0.4',
+136 verbose parsed url   href: 'range-parser@0.0.4' }
+137 silly cache add name="range-parser" spec="0.0.4" args=["range-parser","0.0.4"]
+138 verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+139 verbose addNamed [ 'range-parser', '0.0.4' ]
+140 verbose addNamed [ '0.0.4', '0.0.4' ]
+141 verbose cache add [ 'mkdirp@0.3.3', null ]
+142 silly cache add name=undefined spec="mkdirp@0.3.3" args=["mkdirp@0.3.3",null]
+143 verbose parsed url { pathname: 'mkdirp@0.3.3',
+143 verbose parsed url   path: 'mkdirp@0.3.3',
+143 verbose parsed url   href: 'mkdirp@0.3.3' }
+144 silly cache add name="mkdirp" spec="0.3.3" args=["mkdirp","0.3.3"]
+145 verbose parsed url { pathname: '0.3.3', path: '0.3.3', href: '0.3.3' }
+146 verbose addNamed [ 'mkdirp', '0.3.3' ]
+147 verbose addNamed [ '0.3.3', '0.3.3' ]
+148 verbose cache add [ 'cookie@0.0.3', null ]
+149 silly cache add name=undefined spec="cookie@0.0.3" args=["cookie@0.0.3",null]
+150 verbose parsed url { pathname: 'cookie@0.0.3',
+150 verbose parsed url   path: 'cookie@0.0.3',
+150 verbose parsed url   href: 'cookie@0.0.3' }
+151 silly cache add name="cookie" spec="0.0.3" args=["cookie","0.0.3"]
+152 verbose parsed url { pathname: '0.0.3', path: '0.0.3', href: '0.0.3' }
+153 verbose addNamed [ 'cookie', '0.0.3' ]
+154 verbose addNamed [ '0.0.3', '0.0.3' ]
+155 verbose url raw connect/2.3.6
+156 verbose url resolving [ 'https://registry.npmjs.org/', './connect/2.3.6' ]
+157 verbose url resolved https://registry.npmjs.org/connect/2.3.6
+158 http GET https://registry.npmjs.org/connect/2.3.6
+159 verbose url raw commander/0.6.1
+160 verbose url resolving [ 'https://registry.npmjs.org/', './commander/0.6.1' ]
+161 verbose url resolved https://registry.npmjs.org/commander/0.6.1
+162 http GET https://registry.npmjs.org/commander/0.6.1
+163 verbose url raw range-parser/0.0.4
+164 verbose url resolving [ 'https://registry.npmjs.org/', './range-parser/0.0.4' ]
+165 verbose url resolved https://registry.npmjs.org/range-parser/0.0.4
+166 http GET https://registry.npmjs.org/range-parser/0.0.4
+167 verbose url raw mkdirp/0.3.3
+168 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp/0.3.3' ]
+169 verbose url resolved https://registry.npmjs.org/mkdirp/0.3.3
+170 http GET https://registry.npmjs.org/mkdirp/0.3.3
+171 verbose url raw cookie/0.0.3
+172 verbose url resolving [ 'https://registry.npmjs.org/', './cookie/0.0.3' ]
+173 verbose url resolved https://registry.npmjs.org/cookie/0.0.3
+174 http GET https://registry.npmjs.org/cookie/0.0.3
+175 verbose cache add [ 'crc@0.2.0', null ]
+176 silly cache add name=undefined spec="crc@0.2.0" args=["crc@0.2.0",null]
+177 verbose parsed url { pathname: 'crc@0.2.0', path: 'crc@0.2.0', href: 'crc@0.2.0' }
+178 silly cache add name="crc" spec="0.2.0" args=["crc","0.2.0"]
+179 verbose parsed url { pathname: '0.2.0', path: '0.2.0', href: '0.2.0' }
+180 verbose addNamed [ 'crc', '0.2.0' ]
+181 verbose addNamed [ '0.2.0', '0.2.0' ]
+182 verbose cache add [ 'fresh@0.1.0', null ]
+183 silly cache add name=undefined spec="fresh@0.1.0" args=["fresh@0.1.0",null]
+184 verbose parsed url { pathname: 'fresh@0.1.0',
+184 verbose parsed url   path: 'fresh@0.1.0',
+184 verbose parsed url   href: 'fresh@0.1.0' }
+185 silly cache add name="fresh" spec="0.1.0" args=["fresh","0.1.0"]
+186 verbose parsed url { pathname: '0.1.0', path: '0.1.0', href: '0.1.0' }
+187 verbose addNamed [ 'fresh', '0.1.0' ]
+188 verbose addNamed [ '0.1.0', '0.1.0' ]
+189 verbose cache add [ 'methods@0.0.1', null ]
+190 silly cache add name=undefined spec="methods@0.0.1" args=["methods@0.0.1",null]
+191 verbose parsed url { pathname: 'methods@0.0.1',
+191 verbose parsed url   path: 'methods@0.0.1',
+191 verbose parsed url   href: 'methods@0.0.1' }
+192 silly cache add name="methods" spec="0.0.1" args=["methods","0.0.1"]
+193 verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+194 verbose addNamed [ 'methods', '0.0.1' ]
+195 verbose addNamed [ '0.0.1', '0.0.1' ]
+196 verbose cache add [ 'debug@*', null ]
+197 silly cache add name=undefined spec="debug@*" args=["debug@*",null]
+198 verbose parsed url { pathname: 'debug@*', path: 'debug@*', href: 'debug@*' }
+199 silly cache add name="debug" spec="*" args=["debug","*"]
+200 verbose parsed url { pathname: '*', path: '*', href: '*' }
+201 verbose addNamed [ 'debug', '*' ]
+202 verbose addNamed [ null, '' ]
+203 silly addNameRange { name: 'debug', range: '', hasData: false }
+204 verbose url raw crc/0.2.0
+205 verbose url resolving [ 'https://registry.npmjs.org/', './crc/0.2.0' ]
+206 verbose url resolved https://registry.npmjs.org/crc/0.2.0
+207 http GET https://registry.npmjs.org/crc/0.2.0
+208 verbose url raw fresh/0.1.0
+209 verbose url resolving [ 'https://registry.npmjs.org/', './fresh/0.1.0' ]
+210 verbose url resolved https://registry.npmjs.org/fresh/0.1.0
+211 http GET https://registry.npmjs.org/fresh/0.1.0
+212 verbose url raw methods/0.0.1
+213 verbose url resolving [ 'https://registry.npmjs.org/', './methods/0.0.1' ]
+214 verbose url resolved https://registry.npmjs.org/methods/0.0.1
+215 http GET https://registry.npmjs.org/methods/0.0.1
+216 verbose url raw debug
+217 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+218 verbose url resolved https://registry.npmjs.org/debug
+219 verbose etag "92X6MV3X72Q32PS39ITCKXUTH"
+220 http GET https://registry.npmjs.org/debug
+221 http 200 https://registry.npmjs.org/commander/0.6.1
+222 silly registry.get cb [ 200,
+222 silly registry.get   { vary: 'Accept',
+222 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+222 silly registry.get     etag: '"65DPNM9LMWFDRI7VT6UKGCHKI"',
+222 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:57 GMT',
+222 silly registry.get     'content-type': 'application/json',
+222 silly registry.get     'content-length': '7887' } ]
+223 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-0.6.1.tgz',
+223 verbose addRemoteTarball   'fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06' ]
+224 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837540-0.9527494357898831/tmp.tgz
+225 http GET https://registry.npmjs.org/commander/-/commander-0.6.1.tgz
+226 http 200 https://registry.npmjs.org/mkdirp/0.3.3
+227 silly registry.get cb [ 200,
+227 silly registry.get   { vary: 'Accept',
+227 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+227 silly registry.get     etag: '"4O9MAY2PHTLG136W2LQJPIBV"',
+227 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:57 GMT',
+227 silly registry.get     'content-type': 'application/json',
+227 silly registry.get     'content-length': '855' } ]
+228 verbose addRemoteTarball [ 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.3.tgz',
+228 verbose addRemoteTarball   '595e251c1370c3a68bab2136d0e348b8105adf13' ]
+229 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837558-0.9837042752187699/tmp.tgz
+230 http GET https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.3.tgz
+231 http 200 https://registry.npmjs.org/cookie/0.0.3
+232 silly registry.get cb [ 200,
+232 silly registry.get   { vary: 'Accept',
+232 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+232 silly registry.get     etag: '"CFVU1H4T2K61GUC9IICFQP1NF"',
+232 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:57 GMT',
+232 silly registry.get     'content-type': 'application/json',
+232 silly registry.get     'content-length': '793' } ]
+233 verbose addRemoteTarball [ 'https://registry.npmjs.org/cookie/-/cookie-0.0.3.tgz',
+233 verbose addRemoteTarball   '732b0e64cb77186954f5e36b0b6bcfd062a12e91' ]
+234 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837582-0.9650508083868772/tmp.tgz
+235 http GET https://registry.npmjs.org/cookie/-/cookie-0.0.3.tgz
+236 http 200 https://registry.npmjs.org/range-parser/0.0.4
+237 silly registry.get cb [ 200,
+237 silly registry.get   { vary: 'Accept',
+237 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+237 silly registry.get     etag: '"2F64USHZQ01WN14IPIK31UMWT"',
+237 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:57 GMT',
+237 silly registry.get     'content-type': 'application/json',
+237 silly registry.get     'content-length': '728' } ]
+238 verbose addRemoteTarball [ 'https://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz',
+238 verbose addRemoteTarball   'c0427ffef51c10acba0782a46c9602e744ff620b' ]
+239 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837614-0.6235643569380045/tmp.tgz
+240 http GET https://registry.npmjs.org/range-parser/-/range-parser-0.0.4.tgz
+241 http 200 https://registry.npmjs.org/crc/0.2.0
+242 silly registry.get cb [ 200,
+242 silly registry.get   { vary: 'Accept',
+242 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+242 silly registry.get     etag: '"1M5FR0NDBYHDTK7P5PEWWMJBW"',
+242 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:58 GMT',
+242 silly registry.get     'content-type': 'application/json',
+242 silly registry.get     'content-length': '770' } ]
+243 verbose addRemoteTarball [ 'https://registry.npmjs.org/crc/-/crc-0.2.0.tgz',
+243 verbose addRemoteTarball   'f4486b9bf0a12df83c3fca14e31e030fdabd9454' ]
+244 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837653-0.2784790121950209/tmp.tgz
+245 http GET https://registry.npmjs.org/crc/-/crc-0.2.0.tgz
+246 http 200 https://registry.npmjs.org/connect/2.3.6
+247 silly registry.get cb [ 200,
+247 silly registry.get   { vary: 'Accept',
+247 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+247 silly registry.get     etag: '"48NH0JACRBWU16UL5AG63QDYU"',
+247 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:58 GMT',
+247 silly registry.get     'content-type': 'application/json',
+247 silly registry.get     'content-length': '899' } ]
+248 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect/-/connect-2.3.6.tgz',
+248 verbose addRemoteTarball   '3ba2e2e0ffbf14161d6ed6575ad4e99b1428652e' ]
+249 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837663-0.7621637787669897/tmp.tgz
+250 http GET https://registry.npmjs.org/connect/-/connect-2.3.6.tgz
+251 http 200 https://registry.npmjs.org/methods/0.0.1
+252 silly registry.get cb [ 200,
+252 silly registry.get   { vary: 'Accept',
+252 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+252 silly registry.get     etag: '"ERWK7PAT2VYXUX4QF36XRTEBE"',
+252 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:58 GMT',
+252 silly registry.get     'content-type': 'application/json',
+252 silly registry.get     'content-length': '496' } ]
+253 http 200 https://registry.npmjs.org/fresh/0.1.0
+254 silly registry.get cb [ 200,
+254 silly registry.get   { vary: 'Accept',
+254 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+254 silly registry.get     etag: '"A45VIPQLM2LXS5XJT58TAEDUY"',
+254 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:58 GMT',
+254 silly registry.get     'content-type': 'application/json',
+254 silly registry.get     'content-length': '699' } ]
+255 verbose addRemoteTarball [ 'https://registry.npmjs.org/methods/-/methods-0.0.1.tgz',
+255 verbose addRemoteTarball   '277c90f8bef39709645a8371c51c3b6c648e068c' ]
+256 verbose addRemoteTarball [ 'https://registry.npmjs.org/fresh/-/fresh-0.1.0.tgz',
+256 verbose addRemoteTarball   '03e4b0178424e4c2d5d19a54d8814cdc97934850' ]
+257 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837682-0.18497991166077554/tmp.tgz
+258 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837683-0.6273425351828337/tmp.tgz
+259 http GET https://registry.npmjs.org/methods/-/methods-0.0.1.tgz
+260 http GET https://registry.npmjs.org/fresh/-/fresh-0.1.0.tgz
+261 silly shasum updated bytes 9774
+262 info shasum fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06
+262 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837540-0.9527494357898831/tmp.tgz
+263 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837540-0.9527494357898831/tmp.tgz
+264 silly gunzTarPerm modes [ '755', '644' ]
+265 silly gunzTarPerm extractEntry .npmignore
+266 silly gunzTarPerm extractEntry .travis.yml
+267 silly gunzTarPerm extractEntry History.md
+268 silly gunzTarPerm extractEntry index.js
+269 silly gunzTarPerm extractEntry lib/
+270 http 200 https://registry.npmjs.org/debug
+271 silly registry.get cb [ 200,
+271 silly registry.get   { vary: 'Accept',
+271 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+271 silly registry.get     etag: '"1FW8B04KOD74WQAQZ7J5F3SRA"',
+271 silly registry.get     date: 'Tue, 03 Jul 2012 21:43:58 GMT',
+271 silly registry.get     'content-type': 'application/json',
+271 silly registry.get     'content-length': '9442' } ]
+272 silly gunzTarPerm extractEntry lib/commander.js
+273 silly gunzTarPerm extractEntry Makefile
+274 silly shasum updated bytes 2350
+275 info shasum 732b0e64cb77186954f5e36b0b6bcfd062a12e91
+275 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837582-0.9650508083868772/tmp.tgz
+276 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837582-0.9650508083868772/tmp.tgz
+277 silly gunzTarPerm extractEntry package.json
+278 silly addNameRange number 2 { name: 'debug', range: '', hasData: true }
+279 silly addNameRange versions [ 'debug',
+279 silly addNameRange   [ '0.0.1',
+279 silly addNameRange     '0.1.0',
+279 silly addNameRange     '0.2.0',
+279 silly addNameRange     '0.3.0',
+279 silly addNameRange     '0.4.0',
+279 silly addNameRange     '0.4.1',
+279 silly addNameRange     '0.5.0',
+279 silly addNameRange     '0.6.0',
+279 silly addNameRange     '0.7.0' ] ]
+280 silly gunzTarPerm extractEntry Readme.md
+281 verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-0.7.0.tgz',
+281 verbose addRemoteTarball   '79842815395975b8baee945004c2def149f2401d' ]
+282 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837867-0.00018488033674657345/tmp.tgz
+283 http GET https://registry.npmjs.org/debug/-/debug-0.7.0.tgz
+284 silly gunzTarPerm modes [ '755', '644' ]
+285 silly shasum updated bytes 4655
+286 info shasum 595e251c1370c3a68bab2136d0e348b8105adf13
+286 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837558-0.9837042752187699/tmp.tgz
+287 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837558-0.9837042752187699/tmp.tgz
+288 silly gunzTarPerm extractEntry package.json
+289 silly gunzTarPerm modes [ '755', '644' ]
+290 silly gunzTarPerm extractEntry .npmignore
+291 silly gunzTarPerm extractEntry README.md
+292 silly gunzTarPerm extractEntry package.json
+293 silly gunzTarPerm extractEntry .npmignore
+294 silly gunzTarPerm extractEntry LICENSE
+295 silly gunzTarPerm extractEntry index.js
+296 silly gunzTarPerm extractEntry test/parse.js
+297 silly gunzTarPerm extractEntry index.js
+298 silly gunzTarPerm extractEntry examples/pow.js
+299 silly gunzTarPerm extractEntry test/serialize.js
+300 silly gunzTarPerm extractEntry test/mocha.opts
+301 silly gunzTarPerm extractEntry .travis.yml
+302 silly gunzTarPerm extractEntry examples/pow.js.orig
+303 silly gunzTarPerm extractEntry examples/pow.js.rej
+304 silly gunzTarPerm extractEntry test/perm.js
+305 silly gunzTarPerm extractEntry test/perm_sync.js
+306 silly gunzTarPerm extractEntry test/race.js
+307 silly gunzTarPerm extractEntry test/rel.js
+308 silly gunzTarPerm extractEntry test/return.js
+309 silly gunzTarPerm extractEntry test/clobber.js
+310 silly gunzTarPerm extractEntry test/root.js
+311 silly gunzTarPerm extractEntry test/umask.js
+312 silly gunzTarPerm extractEntry test/sync.js
+313 silly shasum updated bytes 1283
+314 info shasum c0427ffef51c10acba0782a46c9602e744ff620b
+314 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837614-0.6235643569380045/tmp.tgz
+315 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837614-0.6235643569380045/tmp.tgz
+316 silly gunzTarPerm modes [ '755', '644' ]
+317 silly gunzTarPerm extractEntry test/chmod.js
+318 silly gunzTarPerm extractEntry test/umask_sync.js
+319 silly gunzTarPerm extractEntry package.json
+320 silly gunzTarPerm extractEntry .npmignore
+321 silly gunzTarPerm extractEntry index.js
+322 silly gunzTarPerm extractEntry test/return_sync.js
+323 silly gunzTarPerm extractEntry test/mkdirp.js
+324 silly gunzTarPerm extractEntry History.md
+325 silly gunzTarPerm extractEntry Makefile
+326 silly gunzTarPerm extractEntry .travis.yml
+327 silly gunzTarPerm extractEntry .gitignore.rej
+328 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837582-0.9650508083868772/package/package.json
+329 silly gunzTarPerm extractEntry Readme.md
+330 silly gunzTarPerm extractEntry .gitignore.orig
+331 silly gunzTarPerm extractEntry README.markdown
+332 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837582-0.9650508083868772/package/package.json
+333 verbose tar pack [ '/Users/rcameron/.npm/cookie/0.0.3/package.tgz',
+333 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837582-0.9650508083868772/package' ]
+334 verbose tarball /Users/rcameron/.npm/cookie/0.0.3/package.tgz
+335 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837582-0.9650508083868772/package
+336 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837540-0.9527494357898831/package/package.json
+337 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837540-0.9527494357898831/package/package.json
+338 verbose tar pack [ '/Users/rcameron/.npm/commander/0.6.1/package.tgz',
+338 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837540-0.9527494357898831/package' ]
+339 verbose tarball /Users/rcameron/.npm/commander/0.6.1/package.tgz
+340 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837540-0.9527494357898831/package
+341 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837614-0.6235643569380045/package/package.json
+342 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837614-0.6235643569380045/package/package.json
+343 verbose tar pack [ '/Users/rcameron/.npm/range-parser/0.0.4/package.tgz',
+343 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837614-0.6235643569380045/package' ]
+344 verbose tarball /Users/rcameron/.npm/range-parser/0.0.4/package.tgz
+345 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837614-0.6235643569380045/package
+346 verbose tar unpack /Users/rcameron/.npm/cookie/0.0.3/package.tgz
+347 silly gunzTarPerm modes [ '755', '644' ]
+348 silly shasum updated bytes 469
+349 silly gunzTarPerm extractEntry package.json
+350 info shasum 277c90f8bef39709645a8371c51c3b6c648e068c
+350 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837682-0.18497991166077554/tmp.tgz
+351 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837682-0.18497991166077554/tmp.tgz
+352 silly gunzTarPerm extractEntry .npmignore
+353 silly gunzTarPerm extractEntry README.md
+354 verbose tar unpack /Users/rcameron/.npm/range-parser/0.0.4/package.tgz
+355 silly gunzTarPerm extractEntry index.js
+356 silly gunzTarPerm extractEntry .travis.yml
+357 silly gunzTarPerm extractEntry test/parse.js
+358 silly gunzTarPerm extractEntry test/serialize.js
+359 silly gunzTarPerm modes [ '755', '644' ]
+360 silly gunzTarPerm modes [ '755', '644' ]
+361 silly gunzTarPerm extractEntry test/mocha.opts
+362 silly shasum updated bytes 1087
+363 info shasum 03e4b0178424e4c2d5d19a54d8814cdc97934850
+363 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837683-0.6273425351828337/tmp.tgz
+364 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837683-0.6273425351828337/tmp.tgz
+365 silly gunzTarPerm extractEntry package.json
+366 silly gunzTarPerm extractEntry package.json
+367 silly gunzTarPerm extractEntry index.js
+368 silly gunzTarPerm extractEntry .npmignore
+369 silly gunzTarPerm extractEntry index.js
+370 silly gunzTarPerm extractEntry History.md
+371 silly gunzTarPerm extractEntry Makefile
+372 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837682-0.18497991166077554/package/package.json
+373 silly gunzTarPerm extractEntry Readme.md
+374 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837682-0.18497991166077554/package/package.json
+375 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837558-0.9837042752187699/package/package.json
+376 silly gunzTarPerm modes [ '755', '644' ]
+377 verbose tar pack [ '/Users/rcameron/.npm/methods/0.0.1/package.tgz',
+377 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837682-0.18497991166077554/package' ]
+378 verbose tarball /Users/rcameron/.npm/methods/0.0.1/package.tgz
+379 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837682-0.18497991166077554/package
+380 silly gunzTarPerm extractEntry package.json
+381 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837558-0.9837042752187699/package/package.json
+382 silly gunzTarPerm extractEntry .npmignore
+383 silly gunzTarPerm extractEntry index.js
+384 silly gunzTarPerm extractEntry Makefile
+385 silly gunzTarPerm extractEntry Readme.md
+386 verbose read json /Users/rcameron/.npm/cookie/0.0.3/package/package.json
+387 verbose tar pack [ '/Users/rcameron/.npm/mkdirp/0.3.3/package.tgz',
+387 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837558-0.9837042752187699/package' ]
+388 verbose tarball /Users/rcameron/.npm/mkdirp/0.3.3/package.tgz
+389 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837558-0.9837042752187699/package
+390 silly shasum updated bytes 10240
+391 info shasum f4486b9bf0a12df83c3fca14e31e030fdabd9454
+391 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837653-0.2784790121950209/tmp.tgz
+392 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837653-0.2784790121950209/tmp.tgz
+393 verbose read json /Users/rcameron/.npm/range-parser/0.0.4/package/package.json
+394 silly gunzTarPerm modes [ '755', '644' ]
+395 verbose tar unpack /Users/rcameron/.npm/methods/0.0.1/package.tgz
+396 verbose tar unpack /Users/rcameron/.npm/commander/0.6.1/package.tgz
+397 silly shasum updated bytes 1280
+398 silly gunzTarPerm extractEntry .gitignore
+399 silly shasum updated bytes 2353
+400 info shasum d19c4691d4197bd4c8e05e7f3b05702b333fb929
+400 info shasum /Users/rcameron/.npm/range-parser/0.0.4/package.tgz
+401 verbose from cache /Users/rcameron/.npm/range-parser/0.0.4/package/package.json
+402 info shasum 7c97c45ba106b5e9a472778174e0fe3ae4957b7b
+402 info shasum /Users/rcameron/.npm/cookie/0.0.3/package.tgz
+403 verbose from cache /Users/rcameron/.npm/cookie/0.0.3/package/package.json
+404 silly gunzTarPerm extractEntry .gitmodules
+405 silly gunzTarPerm extractEntry Makefile
+406 verbose chmod /Users/rcameron/.npm/range-parser/0.0.4/package.tgz 644
+407 verbose chown /Users/rcameron/.npm/range-parser/0.0.4/package.tgz [ 502, 502 ]
+408 verbose chmod /Users/rcameron/.npm/cookie/0.0.3/package.tgz 644
+409 verbose chown /Users/rcameron/.npm/cookie/0.0.3/package.tgz [ 502, 502 ]
+410 silly gunzTarPerm modes [ '755', '644' ]
+411 silly gunzTarPerm modes [ '755', '644' ]
+412 silly gunzTarPerm extractEntry package.json
+413 silly gunzTarPerm extractEntry README.md
+414 silly gunzTarPerm extractEntry package.json
+415 silly gunzTarPerm extractEntry package.json
+416 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837683-0.6273425351828337/package/package.json
+417 silly gunzTarPerm extractEntry index.js
+418 silly gunzTarPerm extractEntry .npmignore
+419 silly gunzTarPerm extractEntry index.js
+420 silly gunzTarPerm extractEntry lib/crc.js
+421 silly gunzTarPerm extractEntry test/crc.js
+422 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837683-0.6273425351828337/package/package.json
+423 silly gunzTarPerm extractEntry .travis.yml
+424 silly gunzTarPerm extractEntry History.md
+425 verbose tar pack [ '/Users/rcameron/.npm/fresh/0.1.0/package.tgz',
+425 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837683-0.6273425351828337/package' ]
+426 verbose tarball /Users/rcameron/.npm/fresh/0.1.0/package.tgz
+427 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837683-0.6273425351828337/package
+428 verbose read json /Users/rcameron/.npm/methods/0.0.1/package/package.json
+429 silly shasum updated bytes 5295
+430 info shasum 79842815395975b8baee945004c2def149f2401d
+430 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837867-0.00018488033674657345/tmp.tgz
+431 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837867-0.00018488033674657345/tmp.tgz
+432 silly gunzTarPerm extractEntry lib/commander.js
+433 silly gunzTarPerm extractEntry Makefile
+434 silly shasum updated bytes 467
+435 info shasum f2a7d51ae43e877103309707b924b2789e7c6e2d
+435 info shasum /Users/rcameron/.npm/methods/0.0.1/package.tgz
+436 verbose from cache /Users/rcameron/.npm/methods/0.0.1/package/package.json
+437 silly gunzTarPerm extractEntry Readme.md
+438 verbose tar unpack /Users/rcameron/.npm/fresh/0.1.0/package.tgz
+439 verbose chmod /Users/rcameron/.npm/methods/0.0.1/package.tgz 644
+440 verbose chown /Users/rcameron/.npm/methods/0.0.1/package.tgz [ 502, 502 ]
+441 silly gunzTarPerm modes [ '755', '644' ]
+442 silly gunzTarPerm modes [ '755', '644' ]
+443 silly gunzTarPerm extractEntry .npmignore
+444 silly gunzTarPerm extractEntry package.json
+445 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837653-0.2784790121950209/package/package.json
+446 silly gunzTarPerm extractEntry debug.component.js
+447 silly gunzTarPerm extractEntry debug.js
+448 silly gunzTarPerm extractEntry .npmignore
+449 silly gunzTarPerm extractEntry index.js
+450 silly gunzTarPerm extractEntry example/
+451 silly gunzTarPerm extractEntry example/app.js
+452 silly gunzTarPerm extractEntry Makefile
+453 silly gunzTarPerm extractEntry Readme.md
+454 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837653-0.2784790121950209/package/package.json
+455 silly gunzTarPerm extractEntry example/browser.html
+456 silly gunzTarPerm extractEntry example/wildcards.js
+457 silly gunzTarPerm extractEntry example/worker.js
+458 verbose tar pack [ '/Users/rcameron/.npm/crc/0.2.0/package.tgz',
+458 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837653-0.2784790121950209/package' ]
+459 verbose tarball /Users/rcameron/.npm/crc/0.2.0/package.tgz
+460 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837653-0.2784790121950209/package
+461 silly gunzTarPerm extractEntry head.js
+462 silly gunzTarPerm extractEntry History.md
+463 silly gunzTarPerm extractEntry index.js
+464 silly gunzTarPerm extractEntry lib/
+465 silly gunzTarPerm extractEntry lib/debug.js
+466 silly gunzTarPerm extractEntry Makefile
+467 silly gunzTarPerm extractEntry package.json
+468 silly gunzTarPerm extractEntry Readme.md
+469 silly gunzTarPerm extractEntry tail.js
+470 verbose read json /Users/rcameron/.npm/fresh/0.1.0/package/package.json
+471 silly shasum updated bytes 1081
+472 info shasum 37068654a0a89364a289f4498ebc6daf2b18a9ba
+472 info shasum /Users/rcameron/.npm/fresh/0.1.0/package.tgz
+473 verbose from cache /Users/rcameron/.npm/fresh/0.1.0/package/package.json
+474 verbose chmod /Users/rcameron/.npm/fresh/0.1.0/package.tgz 644
+475 verbose chown /Users/rcameron/.npm/fresh/0.1.0/package.tgz [ 502, 502 ]
+476 verbose read json /Users/rcameron/.npm/commander/0.6.1/package/package.json
+477 silly shasum updated bytes 9731
+478 info shasum c87bdb75693f28d421f1803c1495440eaa86f631
+478 info shasum /Users/rcameron/.npm/commander/0.6.1/package.tgz
+479 verbose from cache /Users/rcameron/.npm/commander/0.6.1/package/package.json
+480 verbose chmod /Users/rcameron/.npm/commander/0.6.1/package.tgz 644
+481 verbose chown /Users/rcameron/.npm/commander/0.6.1/package.tgz [ 502, 502 ]
+482 verbose tar unpack /Users/rcameron/.npm/mkdirp/0.3.3/package.tgz
+483 silly gunzTarPerm modes [ '755', '644' ]
+484 silly gunzTarPerm extractEntry package.json
+485 silly gunzTarPerm extractEntry .npmignore
+486 silly gunzTarPerm extractEntry LICENSE
+487 silly gunzTarPerm extractEntry index.js
+488 silly gunzTarPerm extractEntry .gitignore.orig
+489 silly gunzTarPerm extractEntry .gitignore.rej
+490 silly gunzTarPerm extractEntry .travis.yml
+491 silly gunzTarPerm extractEntry examples/pow.js
+492 silly gunzTarPerm extractEntry examples/pow.js.orig
+493 silly gunzTarPerm extractEntry examples/pow.js.rej
+494 silly gunzTarPerm extractEntry README.markdown
+495 verbose tar unpack /Users/rcameron/.npm/crc/0.2.0/package.tgz
+496 silly gunzTarPerm extractEntry test/chmod.js
+497 silly gunzTarPerm extractEntry test/perm.js
+498 silly gunzTarPerm extractEntry test/perm_sync.js
+499 silly gunzTarPerm modes [ '755', '644' ]
+500 silly gunzTarPerm extractEntry package.json
+501 silly gunzTarPerm extractEntry test/race.js
+502 silly gunzTarPerm extractEntry test/mkdirp.js
+503 silly gunzTarPerm extractEntry .npmignore
+504 silly gunzTarPerm extractEntry README.md
+505 silly gunzTarPerm extractEntry test/return.js
+506 silly gunzTarPerm extractEntry test/return_sync.js
+507 silly gunzTarPerm extractEntry .gitmodules
+508 silly gunzTarPerm extractEntry lib/crc.js
+509 silly gunzTarPerm extractEntry test/root.js
+510 silly gunzTarPerm extractEntry test/sync.js
+511 silly gunzTarPerm extractEntry Makefile
+512 silly gunzTarPerm extractEntry test/crc.js
+513 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837867-0.00018488033674657345/package/package.json
+514 silly gunzTarPerm extractEntry test/umask.js
+515 silly gunzTarPerm extractEntry test/clobber.js
+516 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837867-0.00018488033674657345/package/package.json
+517 verbose tar pack [ '/Users/rcameron/.npm/debug/0.7.0/package.tgz',
+517 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837867-0.00018488033674657345/package' ]
+518 verbose tarball /Users/rcameron/.npm/debug/0.7.0/package.tgz
+519 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837867-0.00018488033674657345/package
+520 silly gunzTarPerm extractEntry test/umask_sync.js
+521 silly gunzTarPerm extractEntry test/rel.js
+522 verbose read json /Users/rcameron/.npm/crc/0.2.0/package/package.json
+523 silly shasum updated bytes 7551
+524 info shasum ad7f990b5d84280b853fdf39f3a68952de237ae7
+524 info shasum /Users/rcameron/.npm/crc/0.2.0/package.tgz
+525 verbose from cache /Users/rcameron/.npm/crc/0.2.0/package/package.json
+526 verbose chmod /Users/rcameron/.npm/crc/0.2.0/package.tgz 644
+527 verbose chown /Users/rcameron/.npm/crc/0.2.0/package.tgz [ 502, 502 ]
+528 silly shasum updated bytes 32768
+529 silly shasum updated bytes 40929
+530 info shasum 3ba2e2e0ffbf14161d6ed6575ad4e99b1428652e
+530 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837663-0.7621637787669897/tmp.tgz
+531 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837663-0.7621637787669897/tmp.tgz
+532 silly gunzTarPerm modes [ '755', '644' ]
+533 silly gunzTarPerm extractEntry package.json
+534 silly gunzTarPerm extractEntry .npmignore
+535 silly gunzTarPerm extractEntry LICENSE
+536 silly gunzTarPerm extractEntry index.js
+537 silly gunzTarPerm extractEntry test.js
+538 silly gunzTarPerm extractEntry lib/cache.js
+539 silly gunzTarPerm extractEntry lib/connect.js
+540 silly gunzTarPerm extractEntry lib/index.js
+541 verbose tar unpack /Users/rcameron/.npm/debug/0.7.0/package.tgz
+542 silly gunzTarPerm extractEntry lib/patch.js
+543 silly gunzTarPerm extractEntry lib/proto.js
+544 silly gunzTarPerm modes [ '755', '644' ]
+545 silly gunzTarPerm extractEntry package.json
+546 silly gunzTarPerm extractEntry lib/utils.js
+547 silly gunzTarPerm extractEntry lib/middleware/basicAuth.js
+548 verbose read json /Users/rcameron/.npm/mkdirp/0.3.3/package/package.json
+549 silly gunzTarPerm extractEntry .npmignore
+550 silly gunzTarPerm extractEntry debug.js
+551 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+552 silly gunzTarPerm extractEntry lib/middleware/favicon.js
+553 silly gunzTarPerm extractEntry lib/middleware/json.js
+554 silly gunzTarPerm extractEntry head.js
+555 silly gunzTarPerm extractEntry debug.component.js
+556 silly shasum updated bytes 4581
+557 info shasum 96e023f250a08cbdf172a20bc9af6e6dee9ca774
+557 info shasum /Users/rcameron/.npm/mkdirp/0.3.3/package.tgz
+558 verbose from cache /Users/rcameron/.npm/mkdirp/0.3.3/package/package.json
+559 verbose chmod /Users/rcameron/.npm/mkdirp/0.3.3/package.tgz 644
+560 verbose chown /Users/rcameron/.npm/mkdirp/0.3.3/package.tgz [ 502, 502 ]
+561 silly gunzTarPerm extractEntry tail.js
+562 silly gunzTarPerm extractEntry index.js
+563 silly gunzTarPerm extractEntry lib/middleware/directory.js
+564 silly gunzTarPerm extractEntry lib/middleware/bodyParser.js
+565 silly gunzTarPerm extractEntry History.md
+566 silly gunzTarPerm extractEntry lib/middleware/methodOverride.js
+567 silly gunzTarPerm extractEntry lib/debug.js
+568 silly gunzTarPerm extractEntry lib/middleware/multipart.js
+569 silly gunzTarPerm extractEntry Makefile
+570 silly gunzTarPerm extractEntry lib/middleware/query.js
+571 silly gunzTarPerm extractEntry lib/middleware/responseTime.js
+572 silly gunzTarPerm extractEntry example/app.js
+573 silly gunzTarPerm extractEntry example/wildcards.js
+574 silly gunzTarPerm extractEntry lib/middleware/csrf.js
+575 silly gunzTarPerm extractEntry lib/middleware/urlencoded.js
+576 silly gunzTarPerm extractEntry lib/middleware/cookieSession.js
+577 silly gunzTarPerm extractEntry example/worker.js
+578 silly gunzTarPerm extractEntry example/browser.html
+579 silly gunzTarPerm extractEntry Readme.md
+580 silly gunzTarPerm extractEntry lib/middleware/session.js
+581 silly gunzTarPerm extractEntry lib/middleware/cookieParser.js
+582 silly gunzTarPerm extractEntry lib/middleware/static.js
+583 silly gunzTarPerm extractEntry lib/middleware/compress.js
+584 silly gunzTarPerm extractEntry lib/middleware/staticCache.js
+585 silly gunzTarPerm extractEntry lib/middleware/limit.js
+586 silly gunzTarPerm extractEntry lib/middleware/vhost.js
+587 silly gunzTarPerm extractEntry lib/middleware/logger.js
+588 silly gunzTarPerm extractEntry lib/middleware/session/cookie.js
+589 silly gunzTarPerm extractEntry lib/middleware/session/memory.js
+590 silly gunzTarPerm extractEntry lib/middleware/session/session.js
+591 silly gunzTarPerm extractEntry lib/middleware/session/store.js
+592 silly gunzTarPerm extractEntry lib/public/directory.html
+593 silly gunzTarPerm extractEntry lib/public/error.html
+594 silly gunzTarPerm extractEntry lib/public/favicon.ico
+595 silly gunzTarPerm extractEntry lib/public/icons/page_white_edit.png
+596 silly gunzTarPerm extractEntry lib/public/icons/page.png
+597 silly gunzTarPerm extractEntry lib/public/icons/page_attach.png
+598 silly gunzTarPerm extractEntry lib/public/icons/page_code.png
+599 silly gunzTarPerm extractEntry lib/public/icons/page_copy.png
+600 silly gunzTarPerm extractEntry lib/public/icons/page_delete.png
+601 silly gunzTarPerm extractEntry lib/public/icons/page_edit.png
+602 silly gunzTarPerm extractEntry lib/public/icons/page_error.png
+603 silly gunzTarPerm extractEntry lib/public/icons/page_excel.png
+604 silly gunzTarPerm extractEntry lib/public/icons/page_find.png
+605 silly gunzTarPerm extractEntry lib/public/icons/page_gear.png
+606 silly gunzTarPerm extractEntry lib/public/icons/page_go.png
+607 silly gunzTarPerm extractEntry lib/public/icons/page_green.png
+608 silly gunzTarPerm extractEntry lib/public/icons/page_key.png
+609 silly gunzTarPerm extractEntry lib/public/icons/page_lightning.png
+610 silly gunzTarPerm extractEntry lib/public/icons/page_link.png
+611 silly gunzTarPerm extractEntry lib/public/icons/page_paintbrush.png
+612 silly gunzTarPerm extractEntry lib/public/icons/page_paste.png
+613 silly gunzTarPerm extractEntry lib/public/icons/page_red.png
+614 silly gunzTarPerm extractEntry lib/public/icons/page_refresh.png
+615 silly gunzTarPerm extractEntry lib/public/icons/page_save.png
+616 silly gunzTarPerm extractEntry lib/public/icons/page_white.png
+617 silly gunzTarPerm extractEntry lib/public/icons/page_white_acrobat.png
+618 silly gunzTarPerm extractEntry lib/public/icons/page_white_actionscript.png
+619 silly gunzTarPerm extractEntry lib/public/icons/page_white_add.png
+620 silly gunzTarPerm extractEntry lib/public/icons/page_white_c.png
+621 silly gunzTarPerm extractEntry lib/public/icons/page_white_camera.png
+622 silly gunzTarPerm extractEntry lib/public/icons/page_white_cd.png
+623 silly gunzTarPerm extractEntry lib/public/icons/page_white_code.png
+624 silly gunzTarPerm extractEntry lib/public/icons/page_white_code_red.png
+625 silly gunzTarPerm extractEntry lib/public/icons/page_white_coldfusion.png
+626 silly gunzTarPerm extractEntry lib/public/icons/page_white_compressed.png
+627 silly gunzTarPerm extractEntry lib/public/icons/page_white_copy.png
+628 silly gunzTarPerm extractEntry lib/public/icons/page_white_cplusplus.png
+629 verbose read json /Users/rcameron/.npm/debug/0.7.0/package/package.json
+630 silly gunzTarPerm extractEntry lib/public/icons/page_white_csharp.png
+631 silly gunzTarPerm extractEntry lib/public/icons/page_white_cup.png
+632 silly gunzTarPerm extractEntry lib/public/icons/page_white_database.png
+633 silly gunzTarPerm extractEntry lib/public/icons/page_white_delete.png
+634 silly gunzTarPerm extractEntry lib/public/icons/page_white_dvd.png
+635 silly gunzTarPerm extractEntry lib/public/icons/page_add.png
+636 silly shasum updated bytes 5206
+637 silly gunzTarPerm extractEntry lib/public/icons/page_white_error.png
+638 info shasum dcfc5bccc7de4b8ec0b1fe0806a7dba5b112ea36
+638 info shasum /Users/rcameron/.npm/debug/0.7.0/package.tgz
+639 verbose from cache /Users/rcameron/.npm/debug/0.7.0/package/package.json
+640 silly gunzTarPerm extractEntry lib/public/icons/page_white_excel.png
+641 verbose chmod /Users/rcameron/.npm/debug/0.7.0/package.tgz 644
+642 verbose chown /Users/rcameron/.npm/debug/0.7.0/package.tgz [ 502, 502 ]
+643 silly gunzTarPerm extractEntry lib/public/icons/page_white_find.png
+644 silly gunzTarPerm extractEntry lib/public/icons/page_white_flash.png
+645 silly gunzTarPerm extractEntry lib/public/icons/page_white_freehand.png
+646 silly gunzTarPerm extractEntry lib/public/icons/page_white_gear.png
+647 silly gunzTarPerm extractEntry lib/public/icons/page_white_get.png
+648 silly gunzTarPerm extractEntry lib/public/icons/page_white_go.png
+649 silly gunzTarPerm extractEntry lib/public/icons/page_white_h.png
+650 silly gunzTarPerm extractEntry lib/public/icons/page_white_horizontal.png
+651 silly gunzTarPerm extractEntry lib/public/icons/page_white_key.png
+652 silly gunzTarPerm extractEntry lib/public/icons/page_white_lightning.png
+653 silly gunzTarPerm extractEntry lib/public/icons/page_white_link.png
+654 silly gunzTarPerm extractEntry lib/public/icons/page_white_magnify.png
+655 silly gunzTarPerm extractEntry lib/public/icons/page_white_medal.png
+656 silly gunzTarPerm extractEntry lib/public/icons/page_white_office.png
+657 silly gunzTarPerm extractEntry lib/public/icons/page_white_paint.png
+658 silly gunzTarPerm extractEntry lib/public/icons/page_white_paintbrush.png
+659 silly gunzTarPerm extractEntry lib/public/icons/page_white_paste.png
+660 silly gunzTarPerm extractEntry lib/public/icons/page_white_php.png
+661 silly gunzTarPerm extractEntry lib/public/icons/page_white_picture.png
+662 silly gunzTarPerm extractEntry lib/public/icons/page_white_powerpoint.png
+663 silly gunzTarPerm extractEntry lib/public/icons/page_white_put.png
+664 silly gunzTarPerm extractEntry lib/public/icons/page_white_ruby.png
+665 silly gunzTarPerm extractEntry lib/public/icons/page_white_stack.png
+666 silly gunzTarPerm extractEntry lib/public/icons/page_white_star.png
+667 silly gunzTarPerm extractEntry lib/public/icons/page_white_swoosh.png
+668 silly gunzTarPerm extractEntry lib/public/icons/page_white_text.png
+669 silly gunzTarPerm extractEntry lib/public/icons/page_white_text_width.png
+670 silly gunzTarPerm extractEntry lib/public/icons/page_white_tux.png
+671 silly gunzTarPerm extractEntry lib/public/icons/page_white_vector.png
+672 silly gunzTarPerm extractEntry lib/public/icons/page_white_visualstudio.png
+673 silly gunzTarPerm extractEntry lib/public/icons/page_white_width.png
+674 silly gunzTarPerm extractEntry lib/public/icons/page_white_word.png
+675 silly gunzTarPerm extractEntry lib/public/icons/page_white_world.png
+676 silly gunzTarPerm extractEntry lib/public/icons/page_white_wrench.png
+677 silly gunzTarPerm extractEntry lib/public/icons/page_white_zip.png
+678 silly gunzTarPerm extractEntry lib/public/icons/page_word.png
+679 silly gunzTarPerm extractEntry lib/public/icons/page_world.png
+680 silly gunzTarPerm extractEntry lib/public/style.css
+681 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837663-0.7621637787669897/package/package.json
+682 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837663-0.7621637787669897/package/package.json
+683 verbose tar pack [ '/Users/rcameron/.npm/connect/2.3.6/package.tgz',
+683 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837663-0.7621637787669897/package' ]
+684 verbose tarball /Users/rcameron/.npm/connect/2.3.6/package.tgz
+685 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351837663-0.7621637787669897/package
+686 verbose tar unpack /Users/rcameron/.npm/connect/2.3.6/package.tgz
+687 silly gunzTarPerm modes [ '755', '644' ]
+688 silly gunzTarPerm extractEntry package.json
+689 silly gunzTarPerm extractEntry .npmignore
+690 silly gunzTarPerm extractEntry LICENSE
+691 silly gunzTarPerm extractEntry index.js
+692 silly gunzTarPerm extractEntry test.js
+693 silly gunzTarPerm extractEntry lib/cache.js
+694 silly gunzTarPerm extractEntry lib/connect.js
+695 silly gunzTarPerm extractEntry lib/index.js
+696 silly gunzTarPerm extractEntry lib/patch.js
+697 silly gunzTarPerm extractEntry lib/proto.js
+698 silly gunzTarPerm extractEntry lib/utils.js
+699 silly gunzTarPerm extractEntry lib/middleware/basicAuth.js
+700 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+701 silly gunzTarPerm extractEntry lib/middleware/favicon.js
+702 silly gunzTarPerm extractEntry lib/middleware/json.js
+703 silly gunzTarPerm extractEntry lib/middleware/directory.js
+704 silly gunzTarPerm extractEntry lib/middleware/bodyParser.js
+705 silly gunzTarPerm extractEntry lib/middleware/methodOverride.js
+706 silly gunzTarPerm extractEntry lib/middleware/multipart.js
+707 silly gunzTarPerm extractEntry lib/middleware/query.js
+708 silly gunzTarPerm extractEntry lib/middleware/responseTime.js
+709 silly gunzTarPerm extractEntry lib/middleware/csrf.js
+710 silly gunzTarPerm extractEntry lib/middleware/urlencoded.js
+711 silly gunzTarPerm extractEntry lib/middleware/cookieSession.js
+712 silly gunzTarPerm extractEntry lib/middleware/session.js
+713 silly gunzTarPerm extractEntry lib/middleware/cookieParser.js
+714 silly gunzTarPerm extractEntry lib/middleware/static.js
+715 silly gunzTarPerm extractEntry lib/middleware/compress.js
+716 silly gunzTarPerm extractEntry lib/middleware/staticCache.js
+717 silly gunzTarPerm extractEntry lib/middleware/limit.js
+718 silly gunzTarPerm extractEntry lib/middleware/vhost.js
+719 silly gunzTarPerm extractEntry lib/middleware/logger.js
+720 silly gunzTarPerm extractEntry lib/middleware/session/cookie.js
+721 silly gunzTarPerm extractEntry lib/middleware/session/memory.js
+722 silly gunzTarPerm extractEntry lib/middleware/session/session.js
+723 silly gunzTarPerm extractEntry lib/middleware/session/store.js
+724 silly gunzTarPerm extractEntry lib/public/directory.html
+725 silly gunzTarPerm extractEntry lib/public/error.html
+726 silly gunzTarPerm extractEntry lib/public/favicon.ico
+727 silly gunzTarPerm extractEntry lib/public/icons/page_white_edit.png
+728 silly gunzTarPerm extractEntry lib/public/icons/page.png
+729 silly gunzTarPerm extractEntry lib/public/icons/page_attach.png
+730 silly gunzTarPerm extractEntry lib/public/icons/page_code.png
+731 silly gunzTarPerm extractEntry lib/public/icons/page_copy.png
+732 silly gunzTarPerm extractEntry lib/public/icons/page_delete.png
+733 silly gunzTarPerm extractEntry lib/public/icons/page_edit.png
+734 silly gunzTarPerm extractEntry lib/public/icons/page_error.png
+735 silly gunzTarPerm extractEntry lib/public/icons/page_excel.png
+736 silly gunzTarPerm extractEntry lib/public/icons/page_find.png
+737 silly gunzTarPerm extractEntry lib/public/icons/page_gear.png
+738 silly gunzTarPerm extractEntry lib/public/icons/page_go.png
+739 silly gunzTarPerm extractEntry lib/public/icons/page_green.png
+740 silly gunzTarPerm extractEntry lib/public/icons/page_key.png
+741 silly gunzTarPerm extractEntry lib/public/icons/page_lightning.png
+742 silly gunzTarPerm extractEntry lib/public/icons/page_link.png
+743 silly gunzTarPerm extractEntry lib/public/icons/page_paintbrush.png
+744 silly gunzTarPerm extractEntry lib/public/icons/page_paste.png
+745 silly gunzTarPerm extractEntry lib/public/icons/page_red.png
+746 silly gunzTarPerm extractEntry lib/public/icons/page_refresh.png
+747 silly gunzTarPerm extractEntry lib/public/icons/page_save.png
+748 silly gunzTarPerm extractEntry lib/public/icons/page_white.png
+749 silly gunzTarPerm extractEntry lib/public/icons/page_white_acrobat.png
+750 silly gunzTarPerm extractEntry lib/public/icons/page_white_actionscript.png
+751 silly gunzTarPerm extractEntry lib/public/icons/page_white_add.png
+752 silly gunzTarPerm extractEntry lib/public/icons/page_white_c.png
+753 silly gunzTarPerm extractEntry lib/public/icons/page_white_camera.png
+754 silly gunzTarPerm extractEntry lib/public/icons/page_white_cd.png
+755 silly gunzTarPerm extractEntry lib/public/icons/page_white_code.png
+756 silly gunzTarPerm extractEntry lib/public/icons/page_white_code_red.png
+757 silly gunzTarPerm extractEntry lib/public/icons/page_white_coldfusion.png
+758 silly gunzTarPerm extractEntry lib/public/icons/page_white_compressed.png
+759 silly gunzTarPerm extractEntry lib/public/icons/page_white_copy.png
+760 silly gunzTarPerm extractEntry lib/public/icons/page_white_cplusplus.png
+761 silly gunzTarPerm extractEntry lib/public/icons/page_white_csharp.png
+762 silly gunzTarPerm extractEntry lib/public/icons/page_white_cup.png
+763 silly gunzTarPerm extractEntry lib/public/icons/page_white_database.png
+764 silly gunzTarPerm extractEntry lib/public/icons/page_white_delete.png
+765 silly gunzTarPerm extractEntry lib/public/icons/page_white_dvd.png
+766 silly gunzTarPerm extractEntry lib/public/icons/page_add.png
+767 silly gunzTarPerm extractEntry lib/public/icons/page_white_error.png
+768 silly gunzTarPerm extractEntry lib/public/icons/page_white_excel.png
+769 silly gunzTarPerm extractEntry lib/public/icons/page_white_find.png
+770 silly gunzTarPerm extractEntry lib/public/icons/page_white_flash.png
+771 silly gunzTarPerm extractEntry lib/public/icons/page_white_freehand.png
+772 silly gunzTarPerm extractEntry lib/public/icons/page_white_gear.png
+773 silly gunzTarPerm extractEntry lib/public/icons/page_white_get.png
+774 silly gunzTarPerm extractEntry lib/public/icons/page_white_go.png
+775 silly gunzTarPerm extractEntry lib/public/icons/page_white_h.png
+776 silly gunzTarPerm extractEntry lib/public/icons/page_white_horizontal.png
+777 silly gunzTarPerm extractEntry lib/public/icons/page_white_key.png
+778 silly gunzTarPerm extractEntry lib/public/icons/page_white_lightning.png
+779 silly gunzTarPerm extractEntry lib/public/icons/page_white_link.png
+780 silly gunzTarPerm extractEntry lib/public/icons/page_white_magnify.png
+781 silly gunzTarPerm extractEntry lib/public/icons/page_white_medal.png
+782 silly gunzTarPerm extractEntry lib/public/icons/page_white_office.png
+783 silly gunzTarPerm extractEntry lib/public/icons/page_white_paint.png
+784 silly gunzTarPerm extractEntry lib/public/icons/page_white_paintbrush.png
+785 silly gunzTarPerm extractEntry lib/public/icons/page_white_paste.png
+786 silly gunzTarPerm extractEntry lib/public/icons/page_white_php.png
+787 silly gunzTarPerm extractEntry lib/public/icons/page_white_picture.png
+788 silly gunzTarPerm extractEntry lib/public/icons/page_white_powerpoint.png
+789 silly gunzTarPerm extractEntry lib/public/icons/page_white_put.png
+790 silly gunzTarPerm extractEntry lib/public/icons/page_white_ruby.png
+791 silly gunzTarPerm extractEntry lib/public/icons/page_white_stack.png
+792 silly gunzTarPerm extractEntry lib/public/icons/page_white_star.png
+793 silly gunzTarPerm extractEntry lib/public/icons/page_white_swoosh.png
+794 silly gunzTarPerm extractEntry lib/public/icons/page_white_text.png
+795 silly gunzTarPerm extractEntry lib/public/icons/page_white_text_width.png
+796 silly gunzTarPerm extractEntry lib/public/icons/page_white_tux.png
+797 silly gunzTarPerm extractEntry lib/public/icons/page_white_vector.png
+798 silly gunzTarPerm extractEntry lib/public/icons/page_white_visualstudio.png
+799 silly gunzTarPerm extractEntry lib/public/icons/page_white_width.png
+800 silly gunzTarPerm extractEntry lib/public/icons/page_white_word.png
+801 silly gunzTarPerm extractEntry lib/public/icons/page_white_world.png
+802 silly gunzTarPerm extractEntry lib/public/icons/page_white_wrench.png
+803 silly gunzTarPerm extractEntry lib/public/icons/page_white_zip.png
+804 silly gunzTarPerm extractEntry lib/public/icons/page_word.png
+805 silly gunzTarPerm extractEntry lib/public/icons/page_world.png
+806 silly gunzTarPerm extractEntry lib/public/style.css
+807 verbose read json /Users/rcameron/.npm/connect/2.3.6/package/package.json
+808 silly shasum updated bytes 40960
+809 silly shasum updated bytes 32733
+810 info shasum a005b5f9d17203189d930cd664faf48f753987c2
+810 info shasum /Users/rcameron/.npm/connect/2.3.6/package.tgz
+811 verbose from cache /Users/rcameron/.npm/connect/2.3.6/package/package.json
+812 verbose chmod /Users/rcameron/.npm/connect/2.3.6/package.tgz 644
+813 verbose chown /Users/rcameron/.npm/connect/2.3.6/package.tgz [ 502, 502 ]
+814 silly resolved [ { name: 'range-parser',
+814 silly resolved     author:
+814 silly resolved      { name: 'TJ Holowaychuk',
+814 silly resolved        email: 'tj@vision-media.ca',
+814 silly resolved        url: 'http://tjholowaychuk.com' },
+814 silly resolved     description: 'Range header field string parser',
+814 silly resolved     version: '0.0.4',
+814 silly resolved     main: 'index.js',
+814 silly resolved     dependencies: {},
+814 silly resolved     devDependencies: { mocha: '*', should: '*' },
+814 silly resolved     _id: 'range-parser@0.0.4',
+814 silly resolved     dist: { shasum: 'd19c4691d4197bd4c8e05e7f3b05702b333fb929' },
+814 silly resolved     _from: 'range-parser@0.0.4' },
+814 silly resolved   { author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+814 silly resolved     name: 'cookie',
+814 silly resolved     description: 'cookie parsing and serialization',
+814 silly resolved     version: '0.0.3',
+814 silly resolved     repository:
+814 silly resolved      { type: 'git',
+814 silly resolved        url: 'git://github.com/shtylman/node-cookie.git' },
+814 silly resolved     keywords: [ 'cookie', 'cookies' ],
+814 silly resolved     main: 'index.js',
+814 silly resolved     scripts: { test: 'mocha' },
+814 silly resolved     dependencies: {},
+814 silly resolved     devDependencies: { mocha: '1.x.x' },
+814 silly resolved     optionalDependencies: {},
+814 silly resolved     engines: { node: '*' },
+814 silly resolved     readme: '# cookie [![Build Status](https://secure.travis-ci.org/shtylman/node-cookie.png?branch=master)](http://travis-ci.org/shtylman/node-cookie) #\n\ncookie is a basic cookie parser and serializer. It doesn\'t make assumptions about how you are going to deal with your cookies. It basically just provides a way to read and write the HTTP cookie headers.\n\nSee [RFC6265](http://tools.ietf.org/html/rfc6265) for details about the http header for cookies.\n\n## how?\n\n```\nnpm install cookie\n```\n\n```javascript\nvar cookie = require(\'cookie\');\n\nvar hdr = cookie.serialize(\'foo\', \'bar\');\n// hdr = \'foo=bar\';\n\nvar cookies = cookie.parse(\'foo=bar; cat=meow; dog=ruff\');\n// cookies = { foo: \'bar\', cat: \'meow\', dog: \'ruff\' };\n```\n\n## more\n\nThe serialize function takes a third parameter, an object, to set cookie options. See the RFC for valid values.\n\n### path\n> cookie path\n\n### expires\n> absolute expiration date for the cookie (Date object)\n\n### maxAge\n> relative max age of the cookie from when the client receives it (seconds)\n\n### domain\n> domain for the cookie\n\n### secure\n> true or false\n\n### httpOnly\n> true or false\n\n',
+814 silly resolved     _id: 'cookie@0.0.3',
+814 silly resolved     dist: { shasum: '7c97c45ba106b5e9a472778174e0fe3ae4957b7b' },
+814 silly resolved     _from: 'cookie@0.0.3' },
+814 silly resolved   { name: 'methods',
+814 silly resolved     version: '0.0.1',
+814 silly resolved     description: 'HTTP methods that node supports',
+814 silly resolved     main: 'index.js',
+814 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+814 silly resolved     keywords: [ 'http', 'methods' ],
+814 silly resolved     author: { name: 'TJ Holowaychuk' },
+814 silly resolved     license: 'MIT',
+814 silly resolved     _id: 'methods@0.0.1',
+814 silly resolved     dist: { shasum: 'f2a7d51ae43e877103309707b924b2789e7c6e2d' },
+814 silly resolved     _from: 'methods@0.0.1' },
+814 silly resolved   { name: 'fresh',
+814 silly resolved     author:
+814 silly resolved      { name: 'TJ Holowaychuk',
+814 silly resolved        email: 'tj@vision-media.ca',
+814 silly resolved        url: 'http://tjholowaychuk.com' },
+814 silly resolved     description: 'HTTP response freshness testing',
+814 silly resolved     version: '0.1.0',
+814 silly resolved     main: 'index.js',
+814 silly resolved     dependencies: {},
+814 silly resolved     devDependencies: { mocha: '*', should: '*' },
+814 silly resolved     _id: 'fresh@0.1.0',
+814 silly resolved     dist: { shasum: '37068654a0a89364a289f4498ebc6daf2b18a9ba' },
+814 silly resolved     _from: 'fresh@0.1.0' },
+814 silly resolved   { name: 'commander',
+814 silly resolved     version: '0.6.1',
+814 silly resolved     description: 'the complete solution for node.js command-line programs',
+814 silly resolved     keywords: [ 'command', 'option', 'parser', 'prompt', 'stdin' ],
+814 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+814 silly resolved     repository:
+814 silly resolved      { type: 'git',
+814 silly resolved        url: 'https://github.com/visionmedia/commander.js.git' },
+814 silly resolved     dependencies: {},
+814 silly resolved     devDependencies: { should: '>= 0.0.1' },
+814 silly resolved     scripts: { test: 'make test' },
+814 silly resolved     main: 'index',
+814 silly resolved     engines: { node: '>= 0.4.x' },
+814 silly resolved     _id: 'commander@0.6.1',
+814 silly resolved     dist: { shasum: 'c87bdb75693f28d421f1803c1495440eaa86f631' },
+814 silly resolved     _from: 'commander@0.6.1' },
+814 silly resolved   { name: 'crc',
+814 silly resolved     version: '0.2.0',
+814 silly resolved     description: 'CRC JavaScript implementation',
+814 silly resolved     author: { name: 'Alex Gorbatchev', email: 'alex.gorbatchev@gmail.com' },
+814 silly resolved     contributors: [],
+814 silly resolved     main: './lib/crc.js',
+814 silly resolved     scripts: {},
+814 silly resolved     directories: {},
+814 silly resolved     devDependencies: { mocha: '*', should: '*' },
+814 silly resolved     repository:
+814 silly resolved      { type: 'git',
+814 silly resolved        url: 'git://github.com/alexgorbatchev/node-crc.git' },
+814 silly resolved     readme: '# JavaScript CRC 8, 16 and 32.\n\nThis is a basic port/copy of the JavaScript CRC implementation. The module works with any CommonJS system supporting `module.exports` notation as well as in the browser. When loaded in the browser, all functions end up under the `window.crc` "namespace".\n\nOriginal code is taken from http://www.digsys.se/JavaScript/CRC.aspx \n\n## Functions\n\nThe following functions are implemented:\n\n    crc8(String)\t#=> Number\n    crcArc(String)\t#=> Number\n    crc16(String)\t#=> Number\n    fcs16(String)\t#=> Number\n    crc32(String)\t#=> Number\n    hex8(Number)\t#=> String\n    hex16(Number)\t#=> String\n    hex32(Number)\t#=> String\n\n## Installation\n\n\tgit clone git://github.com/alexgorbatchev/node-crc.git\n\nor\n\n    npm install crc\n\n## Running tests\n\n    $ npm install\n    $ make test',
+814 silly resolved     _id: 'crc@0.2.0',
+814 silly resolved     dist: { shasum: 'ad7f990b5d84280b853fdf39f3a68952de237ae7' },
+814 silly resolved     _from: 'crc@0.2.0' },
+814 silly resolved   { name: 'mkdirp',
+814 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+814 silly resolved     version: '0.3.3',
+814 silly resolved     author:
+814 silly resolved      { name: 'James Halliday',
+814 silly resolved        email: 'mail@substack.net',
+814 silly resolved        url: 'http://substack.net' },
+814 silly resolved     main: './index',
+814 silly resolved     keywords: [ 'mkdir', 'directory' ],
+814 silly resolved     repository:
+814 silly resolved      { type: 'git',
+814 silly resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+814 silly resolved     scripts: { test: 'tap test/*.js' },
+814 silly resolved     devDependencies: { tap: '~0.2.4' },
+814 silly resolved     license: 'MIT/X11',
+814 silly resolved     engines: { node: '*' },
+814 silly resolved     readme: 'mkdirp\n======\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\nexample\n=======\n\npow.js\n------\n    var mkdirp = require(\'mkdirp\');\n    \n    mkdirp(\'/tmp/foo/bar/baz\', function (err) {\n        if (err) console.error(err)\n        else console.log(\'pow!\')\n    });\n\nOutput\n    pow!\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\nmethods\n=======\n\nvar mkdirp = require(\'mkdirp\');\n\nmkdirp(dir, mode, cb)\n---------------------\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\nmkdirp.sync(dir, mode)\n----------------------\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\ninstall\n=======\n\nWith [npm](http://npmjs.org) do:\n\n    npm install mkdirp\n\nlicense\n=======\n\nMIT/X11\n',
+814 silly resolved     _id: 'mkdirp@0.3.3',
+814 silly resolved     dist: { shasum: '96e023f250a08cbdf172a20bc9af6e6dee9ca774' },
+814 silly resolved     _from: 'mkdirp@0.3.3' },
+814 silly resolved   { name: 'debug',
+814 silly resolved     version: '0.7.0',
+814 silly resolved     description: 'small debugging utility',
+814 silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+814 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+814 silly resolved     dependencies: {},
+814 silly resolved     devDependencies: { mocha: '*' },
+814 silly resolved     main: 'index',
+814 silly resolved     engines: { node: '*' },
+814 silly resolved     component: { scripts: [Object] },
+814 silly resolved     _id: 'debug@0.7.0',
+814 silly resolved     dist: { shasum: 'dcfc5bccc7de4b8ec0b1fe0806a7dba5b112ea36' },
+814 silly resolved     _from: 'debug@*' },
+814 silly resolved   { name: 'connect',
+814 silly resolved     version: '2.3.6',
+814 silly resolved     description: 'High performance middleware framework',
+814 silly resolved     keywords: [ 'framework', 'web', 'middleware', 'connect', 'rack' ],
+814 silly resolved     repository: { type: 'git', url: 'git://github.com/senchalabs/connect.git' },
+814 silly resolved     author:
+814 silly resolved      { name: 'TJ Holowaychuk',
+814 silly resolved        email: 'tj@vision-media.ca',
+814 silly resolved        url: 'http://tjholowaychuk.com' },
+814 silly resolved     dependencies:
+814 silly resolved      { qs: '0.4.2',
+814 silly resolved        mime: '1.2.4',
+814 silly resolved        formidable: '1.0.11',
+814 silly resolved        crc: '0.2.0',
+814 silly resolved        cookie: '0.0.4',
+814 silly resolved        fresh: '0.0.1',
+814 silly resolved        bytes: '0.0.1',
+814 silly resolved        'range-parser': '0.0.4',
+814 silly resolved        debug: '*' },
+814 silly resolved     devDependencies: { should: '*', mocha: '*', jade: '*', dox: '*' },
+814 silly resolved     main: 'index',
+814 silly resolved     engines: { node: '>= 0.5.0' },
+814 silly resolved     _id: 'connect@2.3.6',
+814 silly resolved     dist: { shasum: 'a005b5f9d17203189d930cd664faf48f753987c2' },
+814 silly resolved     _from: 'connect@2.3.6' } ]
+815 info install range-parser@0.0.4 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+816 info install cookie@0.0.3 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+817 info install methods@0.0.1 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+818 info install fresh@0.1.0 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+819 info install commander@0.6.1 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+820 info install crc@0.2.0 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+821 info install mkdirp@0.3.3 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+822 info install debug@0.7.0 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+823 info install connect@2.3.6 into /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express
+824 info installOne range-parser@0.0.4
+825 info installOne cookie@0.0.3
+826 info installOne methods@0.0.1
+827 info installOne fresh@0.1.0
+828 info installOne commander@0.6.1
+829 info installOne crc@0.2.0
+830 info installOne mkdirp@0.3.3
+831 info installOne debug@0.7.0
+832 info installOne connect@2.3.6
+833 verbose from cache /Users/rcameron/.npm/range-parser/0.0.4/package/package.json
+834 verbose from cache /Users/rcameron/.npm/cookie/0.0.3/package/package.json
+835 verbose from cache /Users/rcameron/.npm/methods/0.0.1/package/package.json
+836 verbose from cache /Users/rcameron/.npm/fresh/0.1.0/package/package.json
+837 verbose from cache /Users/rcameron/.npm/commander/0.6.1/package/package.json
+838 verbose from cache /Users/rcameron/.npm/crc/0.2.0/package/package.json
+839 verbose from cache /Users/rcameron/.npm/mkdirp/0.3.3/package/package.json
+840 verbose from cache /Users/rcameron/.npm/debug/0.7.0/package/package.json
+841 verbose from cache /Users/rcameron/.npm/connect/2.3.6/package/package.json
+842 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser unbuild
+843 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser/package.json
+844 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie unbuild
+845 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie/package.json
+846 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods unbuild
+847 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods/package.json
+848 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh unbuild
+849 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh/package.json
+850 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander unbuild
+851 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander/package.json
+852 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc unbuild
+853 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc/package.json
+854 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp unbuild
+855 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp/package.json
+856 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug unbuild
+857 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug/package.json
+858 info /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/connect unbuild
+859 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/connect/package.json
+860 verbose tar unpack /Users/rcameron/.npm/range-parser/0.0.4/package.tgz
+861 verbose tar unpack /Users/rcameron/.npm/cookie/0.0.3/package.tgz
+862 verbose tar unpack /Users/rcameron/.npm/methods/0.0.1/package.tgz
+863 verbose tar unpack /Users/rcameron/.npm/fresh/0.1.0/package.tgz
+864 verbose tar unpack /Users/rcameron/.npm/commander/0.6.1/package.tgz
+865 verbose tar unpack /Users/rcameron/.npm/crc/0.2.0/package.tgz
+866 verbose tar unpack /Users/rcameron/.npm/mkdirp/0.3.3/package.tgz
+867 verbose tar unpack /Users/rcameron/.npm/debug/0.7.0/package.tgz
+868 verbose tar unpack /Users/rcameron/.npm/connect/2.3.6/package.tgz
+869 silly gunzTarPerm modes [ '755', '644' ]
+870 silly gunzTarPerm modes [ '755', '644' ]
+871 silly gunzTarPerm modes [ '755', '644' ]
+872 silly gunzTarPerm modes [ '755', '644' ]
+873 silly gunzTarPerm modes [ '755', '644' ]
+874 silly gunzTarPerm modes [ '755', '644' ]
+875 silly gunzTarPerm modes [ '755', '644' ]
+876 silly gunzTarPerm modes [ '755', '644' ]
+877 silly gunzTarPerm modes [ '755', '644' ]
+878 silly gunzTarPerm extractEntry package.json
+879 silly gunzTarPerm extractEntry package.json
+880 silly gunzTarPerm extractEntry package.json
+881 silly gunzTarPerm extractEntry package.json
+882 silly gunzTarPerm extractEntry package.json
+883 silly gunzTarPerm extractEntry package.json
+884 silly gunzTarPerm extractEntry package.json
+885 silly gunzTarPerm extractEntry package.json
+886 silly gunzTarPerm extractEntry package.json
+887 silly gunzTarPerm extractEntry .npmignore
+888 silly gunzTarPerm extractEntry index.js
+889 silly gunzTarPerm extractEntry .npmignore
+890 silly gunzTarPerm extractEntry index.js
+891 silly gunzTarPerm extractEntry .npmignore
+892 silly gunzTarPerm extractEntry README.md
+893 silly gunzTarPerm extractEntry .npmignore
+894 silly gunzTarPerm extractEntry LICENSE
+895 silly gunzTarPerm extractEntry .npmignore
+896 silly gunzTarPerm extractEntry debug.js
+897 silly gunzTarPerm extractEntry .npmignore
+898 silly gunzTarPerm extractEntry LICENSE
+899 silly gunzTarPerm extractEntry .npmignore
+900 silly gunzTarPerm extractEntry index.js
+901 silly gunzTarPerm extractEntry .npmignore
+902 silly gunzTarPerm extractEntry README.md
+903 silly gunzTarPerm extractEntry index.js
+904 silly gunzTarPerm extractEntry History.md
+905 silly gunzTarPerm extractEntry Makefile
+906 silly gunzTarPerm extractEntry .travis.yml
+907 silly gunzTarPerm extractEntry History.md
+908 silly gunzTarPerm extractEntry .gitmodules
+909 silly gunzTarPerm extractEntry lib/crc.js
+910 silly gunzTarPerm extractEntry head.js
+911 silly gunzTarPerm extractEntry debug.component.js
+912 silly gunzTarPerm extractEntry index.js
+913 silly gunzTarPerm extractEntry .travis.yml
+914 silly gunzTarPerm extractEntry index.js
+915 silly gunzTarPerm extractEntry .gitignore.orig
+916 silly gunzTarPerm extractEntry index.js
+917 silly gunzTarPerm extractEntry test.js
+918 silly gunzTarPerm extractEntry Makefile
+919 silly gunzTarPerm extractEntry Readme.md
+920 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods/package.json
+921 silly gunzTarPerm extractEntry Readme.md
+922 silly gunzTarPerm extractEntry Makefile
+923 silly gunzTarPerm extractEntry test/crc.js
+924 silly gunzTarPerm extractEntry tail.js
+925 silly gunzTarPerm extractEntry index.js
+926 silly gunzTarPerm extractEntry lib/commander.js
+927 silly gunzTarPerm extractEntry Makefile
+928 silly gunzTarPerm extractEntry test/parse.js
+929 silly gunzTarPerm extractEntry test/serialize.js
+930 silly gunzTarPerm extractEntry .gitignore.rej
+931 silly gunzTarPerm extractEntry .travis.yml
+932 silly gunzTarPerm extractEntry lib/cache.js
+933 silly gunzTarPerm extractEntry lib/connect.js
+934 silly gunzTarPerm extractEntry History.md
+935 silly gunzTarPerm extractEntry test/mocha.opts
+936 silly gunzTarPerm extractEntry examples/pow.js
+937 silly gunzTarPerm extractEntry lib/debug.js
+938 silly gunzTarPerm extractEntry lib/index.js
+939 silly gunzTarPerm extractEntry Makefile
+940 info preinstall methods@0.0.1
+941 silly gunzTarPerm extractEntry Readme.md
+942 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods/package.json
+943 silly gunzTarPerm extractEntry examples/pow.js.orig
+944 silly gunzTarPerm extractEntry examples/pow.js.rej
+945 silly gunzTarPerm extractEntry lib/patch.js
+946 silly gunzTarPerm extractEntry lib/proto.js
+947 silly gunzTarPerm extractEntry example/app.js
+948 silly gunzTarPerm extractEntry example/wildcards.js
+949 silly gunzTarPerm extractEntry README.markdown
+950 silly gunzTarPerm extractEntry test/chmod.js
+951 silly gunzTarPerm extractEntry test/perm.js
+952 silly gunzTarPerm extractEntry test/perm_sync.js
+953 verbose readDependencies using package.json deps
+954 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods/package.json
+955 silly gunzTarPerm extractEntry lib/utils.js
+956 silly gunzTarPerm extractEntry lib/middleware/basicAuth.js
+957 silly gunzTarPerm extractEntry example/worker.js
+958 silly gunzTarPerm extractEntry example/browser.html
+959 silly gunzTarPerm extractEntry Readme.md
+960 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh/package.json
+961 silly gunzTarPerm extractEntry test/race.js
+962 silly gunzTarPerm extractEntry test/mkdirp.js
+963 verbose readDependencies using package.json deps
+964 silly resolved []
+965 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods
+966 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods
+967 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/methods/package.json
+968 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+969 silly gunzTarPerm extractEntry lib/middleware/favicon.js
+970 silly gunzTarPerm extractEntry lib/middleware/json.js
+971 info preinstall fresh@0.1.0
+972 silly gunzTarPerm extractEntry test/return.js
+973 silly gunzTarPerm extractEntry test/return_sync.js
+974 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh/package.json
+975 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser/package.json
+976 silly gunzTarPerm extractEntry lib/middleware/directory.js
+977 silly gunzTarPerm extractEntry lib/middleware/bodyParser.js
+978 silly gunzTarPerm extractEntry lib/middleware/methodOverride.js
+979 silly gunzTarPerm extractEntry test/root.js
+980 silly gunzTarPerm extractEntry test/sync.js
+981 silly gunzTarPerm extractEntry lib/middleware/multipart.js
+982 verbose linkStuff [ false,
+982 verbose linkStuff   false,
+982 verbose linkStuff   false,
+982 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+983 info linkStuff methods@0.0.1
+984 verbose linkBins methods@0.0.1
+985 verbose linkMans methods@0.0.1
+986 verbose rebuildBundles methods@0.0.1
+987 info preinstall range-parser@0.0.4
+988 info install methods@0.0.1
+989 verbose readDependencies using package.json deps
+990 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh/package.json
+991 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser/package.json
+992 info postinstall methods@0.0.1
+993 silly gunzTarPerm extractEntry test/umask.js
+994 silly gunzTarPerm extractEntry test/clobber.js
+995 silly gunzTarPerm extractEntry lib/middleware/query.js
+996 silly gunzTarPerm extractEntry lib/middleware/responseTime.js
+997 silly gunzTarPerm extractEntry lib/middleware/csrf.js
+998 silly gunzTarPerm extractEntry lib/middleware/urlencoded.js
+999 silly gunzTarPerm extractEntry lib/middleware/cookieSession.js
+1000 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie/package.json
+1001 silly gunzTarPerm extractEntry test/umask_sync.js
+1002 silly gunzTarPerm extractEntry test/rel.js
+1003 silly gunzTarPerm extractEntry lib/middleware/session.js
+1004 silly gunzTarPerm extractEntry lib/middleware/cookieParser.js
+1005 silly gunzTarPerm extractEntry lib/middleware/static.js
+1006 silly gunzTarPerm extractEntry lib/middleware/compress.js
+1007 info preinstall cookie@0.0.3
+1008 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie/package.json
+1009 silly gunzTarPerm extractEntry lib/middleware/staticCache.js
+1010 silly gunzTarPerm extractEntry lib/middleware/limit.js
+1011 verbose readDependencies using package.json deps
+1012 silly resolved []
+1013 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh
+1014 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh
+1015 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/fresh/package.json
+1016 verbose readDependencies using package.json deps
+1017 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser/package.json
+1018 verbose readDependencies using package.json deps
+1019 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie/package.json
+1020 verbose linkStuff [ false,
+1020 verbose linkStuff   false,
+1020 verbose linkStuff   false,
+1020 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+1021 info linkStuff fresh@0.1.0
+1022 verbose linkBins fresh@0.1.0
+1023 verbose linkMans fresh@0.1.0
+1024 verbose rebuildBundles fresh@0.1.0
+1025 silly gunzTarPerm extractEntry lib/middleware/vhost.js
+1026 verbose readDependencies using package.json deps
+1027 silly resolved []
+1028 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser
+1029 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser
+1030 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/range-parser/package.json
+1031 verbose readDependencies using package.json deps
+1032 silly resolved []
+1033 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie
+1034 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie
+1035 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/cookie/package.json
+1036 info install fresh@0.1.0
+1037 silly gunzTarPerm extractEntry lib/middleware/logger.js
+1038 silly gunzTarPerm extractEntry lib/middleware/session/cookie.js
+1039 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc/package.json
+1040 info postinstall fresh@0.1.0
+1041 silly gunzTarPerm extractEntry lib/middleware/session/memory.js
+1042 silly gunzTarPerm extractEntry lib/middleware/session/session.js
+1043 silly gunzTarPerm extractEntry lib/middleware/session/store.js
+1044 silly gunzTarPerm extractEntry lib/public/directory.html
+1045 silly gunzTarPerm extractEntry lib/public/error.html
+1046 silly gunzTarPerm extractEntry lib/public/favicon.ico
+1047 silly gunzTarPerm extractEntry lib/public/icons/page_white_edit.png
+1048 info preinstall crc@0.2.0
+1049 silly gunzTarPerm extractEntry lib/public/icons/page.png
+1050 silly gunzTarPerm extractEntry lib/public/icons/page_attach.png
+1051 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc/package.json
+1052 verbose linkStuff [ false,
+1052 verbose linkStuff   false,
+1052 verbose linkStuff   false,
+1052 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+1053 info linkStuff range-parser@0.0.4
+1054 verbose linkBins range-parser@0.0.4
+1055 verbose linkMans range-parser@0.0.4
+1056 verbose rebuildBundles range-parser@0.0.4
+1057 verbose linkStuff [ false,
+1057 verbose linkStuff   false,
+1057 verbose linkStuff   false,
+1057 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+1058 info linkStuff cookie@0.0.3
+1059 verbose linkBins cookie@0.0.3
+1060 verbose linkMans cookie@0.0.3
+1061 verbose rebuildBundles cookie@0.0.3
+1062 silly gunzTarPerm extractEntry lib/public/icons/page_code.png
+1063 info install range-parser@0.0.4
+1064 info install cookie@0.0.3
+1065 verbose readDependencies using package.json deps
+1066 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc/package.json
+1067 silly gunzTarPerm extractEntry lib/public/icons/page_copy.png
+1068 silly gunzTarPerm extractEntry lib/public/icons/page_delete.png
+1069 info postinstall range-parser@0.0.4
+1070 info postinstall cookie@0.0.3
+1071 silly gunzTarPerm extractEntry lib/public/icons/page_edit.png
+1072 silly gunzTarPerm extractEntry lib/public/icons/page_error.png
+1073 silly gunzTarPerm extractEntry lib/public/icons/page_excel.png
+1074 silly gunzTarPerm extractEntry lib/public/icons/page_find.png
+1075 silly gunzTarPerm extractEntry lib/public/icons/page_gear.png
+1076 verbose readDependencies using package.json deps
+1077 silly resolved []
+1078 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc
+1079 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc
+1080 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/crc/package.json
+1081 silly gunzTarPerm extractEntry lib/public/icons/page_go.png
+1082 silly gunzTarPerm extractEntry lib/public/icons/page_green.png
+1083 silly gunzTarPerm extractEntry lib/public/icons/page_key.png
+1084 silly gunzTarPerm extractEntry lib/public/icons/page_lightning.png
+1085 silly gunzTarPerm extractEntry lib/public/icons/page_link.png
+1086 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander/package.json
+1087 verbose linkStuff [ false,
+1087 verbose linkStuff   false,
+1087 verbose linkStuff   false,
+1087 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+1088 info linkStuff crc@0.2.0
+1089 verbose linkBins crc@0.2.0
+1090 verbose linkMans crc@0.2.0
+1091 verbose rebuildBundles crc@0.2.0
+1092 info install crc@0.2.0
+1093 info postinstall crc@0.2.0
+1094 silly gunzTarPerm extractEntry lib/public/icons/page_paintbrush.png
+1095 silly gunzTarPerm extractEntry lib/public/icons/page_paste.png
+1096 silly gunzTarPerm extractEntry lib/public/icons/page_red.png
+1097 info preinstall commander@0.6.1
+1098 silly gunzTarPerm extractEntry lib/public/icons/page_refresh.png
+1099 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander/package.json
+1100 silly gunzTarPerm extractEntry lib/public/icons/page_save.png
+1101 verbose readDependencies using package.json deps
+1102 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander/package.json
+1103 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug/package.json
+1104 verbose readDependencies using package.json deps
+1105 silly resolved []
+1106 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander
+1107 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander
+1108 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/commander/package.json
+1109 verbose linkStuff [ false,
+1109 verbose linkStuff   false,
+1109 verbose linkStuff   false,
+1109 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+1110 info linkStuff commander@0.6.1
+1111 verbose linkBins commander@0.6.1
+1112 verbose linkMans commander@0.6.1
+1113 verbose rebuildBundles commander@0.6.1
+1114 info install commander@0.6.1
+1115 silly gunzTarPerm extractEntry lib/public/icons/page_white.png
+1116 silly gunzTarPerm extractEntry lib/public/icons/page_white_acrobat.png
+1117 info postinstall commander@0.6.1
+1118 info preinstall debug@0.7.0
+1119 silly gunzTarPerm extractEntry lib/public/icons/page_white_actionscript.png
+1120 silly gunzTarPerm extractEntry lib/public/icons/page_white_add.png
+1121 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug/package.json
+1122 silly gunzTarPerm extractEntry lib/public/icons/page_white_c.png
+1123 verbose readDependencies using package.json deps
+1124 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug/package.json
+1125 verbose readDependencies using package.json deps
+1126 silly resolved []
+1127 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug
+1128 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug
+1129 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/debug/package.json
+1130 verbose linkStuff [ false,
+1130 verbose linkStuff   false,
+1130 verbose linkStuff   false,
+1130 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+1131 info linkStuff debug@0.7.0
+1132 verbose linkBins debug@0.7.0
+1133 verbose linkMans debug@0.7.0
+1134 verbose rebuildBundles debug@0.7.0
+1135 info install debug@0.7.0
+1136 silly gunzTarPerm extractEntry lib/public/icons/page_white_camera.png
+1137 silly gunzTarPerm extractEntry lib/public/icons/page_white_cd.png
+1138 info postinstall debug@0.7.0
+1139 silly gunzTarPerm extractEntry lib/public/icons/page_white_code.png
+1140 silly gunzTarPerm extractEntry lib/public/icons/page_white_code_red.png
+1141 silly gunzTarPerm extractEntry lib/public/icons/page_white_coldfusion.png
+1142 silly gunzTarPerm extractEntry lib/public/icons/page_white_compressed.png
+1143 silly gunzTarPerm extractEntry lib/public/icons/page_white_copy.png
+1144 silly gunzTarPerm extractEntry lib/public/icons/page_white_cplusplus.png
+1145 silly gunzTarPerm extractEntry lib/public/icons/page_white_csharp.png
+1146 silly gunzTarPerm extractEntry lib/public/icons/page_white_cup.png
+1147 silly gunzTarPerm extractEntry lib/public/icons/page_white_database.png
+1148 silly gunzTarPerm extractEntry lib/public/icons/page_white_delete.png
+1149 silly gunzTarPerm extractEntry lib/public/icons/page_white_dvd.png
+1150 silly gunzTarPerm extractEntry lib/public/icons/page_add.png
+1151 silly gunzTarPerm extractEntry lib/public/icons/page_white_error.png
+1152 silly gunzTarPerm extractEntry lib/public/icons/page_white_excel.png
+1153 silly gunzTarPerm extractEntry lib/public/icons/page_white_find.png
+1154 silly gunzTarPerm extractEntry lib/public/icons/page_white_flash.png
+1155 silly gunzTarPerm extractEntry lib/public/icons/page_white_freehand.png
+1156 silly gunzTarPerm extractEntry lib/public/icons/page_white_gear.png
+1157 silly gunzTarPerm extractEntry lib/public/icons/page_white_get.png
+1158 silly gunzTarPerm extractEntry lib/public/icons/page_white_go.png
+1159 silly gunzTarPerm extractEntry lib/public/icons/page_white_h.png
+1160 silly gunzTarPerm extractEntry lib/public/icons/page_white_horizontal.png
+1161 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp/package.json
+1162 silly gunzTarPerm extractEntry lib/public/icons/page_white_key.png
+1163 silly gunzTarPerm extractEntry lib/public/icons/page_white_lightning.png
+1164 silly gunzTarPerm extractEntry lib/public/icons/page_white_link.png
+1165 silly gunzTarPerm extractEntry lib/public/icons/page_white_magnify.png
+1166 silly gunzTarPerm extractEntry lib/public/icons/page_white_medal.png
+1167 info preinstall mkdirp@0.3.3
+1168 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp/package.json
+1169 silly gunzTarPerm extractEntry lib/public/icons/page_white_office.png
+1170 silly gunzTarPerm extractEntry lib/public/icons/page_white_paint.png
+1171 verbose readDependencies using package.json deps
+1172 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp/package.json
+1173 verbose readDependencies using package.json deps
+1174 silly resolved []
+1175 verbose about to build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp
+1176 info build /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp
+1177 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/mkdirp/package.json
+1178 verbose linkStuff [ false,
+1178 verbose linkStuff   false,
+1178 verbose linkStuff   false,
+1178 verbose linkStuff   '/Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules' ]
+1179 info linkStuff mkdirp@0.3.3
+1180 verbose linkBins mkdirp@0.3.3
+1181 verbose linkMans mkdirp@0.3.3
+1182 verbose rebuildBundles mkdirp@0.3.3
+1183 info install mkdirp@0.3.3
+1184 info postinstall mkdirp@0.3.3
+1185 silly gunzTarPerm extractEntry lib/public/icons/page_white_paintbrush.png
+1186 silly gunzTarPerm extractEntry lib/public/icons/page_white_paste.png
+1187 silly gunzTarPerm extractEntry lib/public/icons/page_white_php.png
+1188 silly gunzTarPerm extractEntry lib/public/icons/page_white_picture.png
+1189 silly gunzTarPerm extractEntry lib/public/icons/page_white_powerpoint.png
+1190 silly gunzTarPerm extractEntry lib/public/icons/page_white_put.png
+1191 silly gunzTarPerm extractEntry lib/public/icons/page_white_ruby.png
+1192 silly gunzTarPerm extractEntry lib/public/icons/page_white_stack.png
+1193 silly gunzTarPerm extractEntry lib/public/icons/page_white_star.png
+1194 silly gunzTarPerm extractEntry lib/public/icons/page_white_swoosh.png
+1195 silly gunzTarPerm extractEntry lib/public/icons/page_white_text.png
+1196 silly gunzTarPerm extractEntry lib/public/icons/page_white_text_width.png
+1197 silly gunzTarPerm extractEntry lib/public/icons/page_white_tux.png
+1198 silly gunzTarPerm extractEntry lib/public/icons/page_white_vector.png
+1199 silly gunzTarPerm extractEntry lib/public/icons/page_white_visualstudio.png
+1200 silly gunzTarPerm extractEntry lib/public/icons/page_white_width.png
+1201 silly gunzTarPerm extractEntry lib/public/icons/page_white_word.png
+1202 silly gunzTarPerm extractEntry lib/public/icons/page_white_world.png
+1203 silly gunzTarPerm extractEntry lib/public/icons/page_white_wrench.png
+1204 silly gunzTarPerm extractEntry lib/public/icons/page_white_zip.png
+1205 silly gunzTarPerm extractEntry lib/public/icons/page_word.png
+1206 silly gunzTarPerm extractEntry lib/public/icons/page_world.png
+1207 silly gunzTarPerm extractEntry lib/public/style.css
+1208 verbose read json /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/connect/package.json
+1209 info preinstall connect@2.3.6
+1210 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/connect/package.json
+1211 verbose readDependencies using package.json deps
+1212 verbose from cache /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder/node_modules/express/node_modules/connect/package.json
+1213 verbose readDependencies using package.json deps
+1214 verbose cache add [ 'formidable@1.0.11', null ]
+1215 silly cache add name=undefined spec="formidable@1.0.11" args=["formidable@1.0.11",null]
+1216 verbose parsed url { pathname: 'formidable@1.0.11',
+1216 verbose parsed url   path: 'formidable@1.0.11',
+1216 verbose parsed url   href: 'formidable@1.0.11' }
+1217 silly cache add name="formidable" spec="1.0.11" args=["formidable","1.0.11"]
+1218 verbose parsed url { pathname: '1.0.11', path: '1.0.11', href: '1.0.11' }
+1219 verbose addNamed [ 'formidable', '1.0.11' ]
+1220 verbose addNamed [ '1.0.11', '1.0.11' ]
+1221 verbose cache add [ 'cookie@0.0.4', null ]
+1222 silly cache add name=undefined spec="cookie@0.0.4" args=["cookie@0.0.4",null]
+1223 verbose parsed url { pathname: 'cookie@0.0.4',
+1223 verbose parsed url   path: 'cookie@0.0.4',
+1223 verbose parsed url   href: 'cookie@0.0.4' }
+1224 silly cache add name="cookie" spec="0.0.4" args=["cookie","0.0.4"]
+1225 verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+1226 verbose addNamed [ 'cookie', '0.0.4' ]
+1227 verbose addNamed [ '0.0.4', '0.0.4' ]
+1228 verbose cache add [ 'fresh@0.0.1', null ]
+1229 silly cache add name=undefined spec="fresh@0.0.1" args=["fresh@0.0.1",null]
+1230 verbose parsed url { pathname: 'fresh@0.0.1',
+1230 verbose parsed url   path: 'fresh@0.0.1',
+1230 verbose parsed url   href: 'fresh@0.0.1' }
+1231 silly cache add name="fresh" spec="0.0.1" args=["fresh","0.0.1"]
+1232 verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+1233 verbose addNamed [ 'fresh', '0.0.1' ]
+1234 verbose addNamed [ '0.0.1', '0.0.1' ]
+1235 verbose cache add [ 'bytes@0.0.1', null ]
+1236 silly cache add name=undefined spec="bytes@0.0.1" args=["bytes@0.0.1",null]
+1237 verbose parsed url { pathname: 'bytes@0.0.1',
+1237 verbose parsed url   path: 'bytes@0.0.1',
+1237 verbose parsed url   href: 'bytes@0.0.1' }
+1238 silly cache add name="bytes" spec="0.0.1" args=["bytes","0.0.1"]
+1239 verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+1240 verbose addNamed [ 'bytes', '0.0.1' ]
+1241 verbose addNamed [ '0.0.1', '0.0.1' ]
+1242 verbose url raw formidable/1.0.11
+1243 verbose url resolving [ 'https://registry.npmjs.org/', './formidable/1.0.11' ]
+1244 verbose url resolved https://registry.npmjs.org/formidable/1.0.11
+1245 http GET https://registry.npmjs.org/formidable/1.0.11
+1246 verbose url raw cookie/0.0.4
+1247 verbose url resolving [ 'https://registry.npmjs.org/', './cookie/0.0.4' ]
+1248 verbose url resolved https://registry.npmjs.org/cookie/0.0.4
+1249 http GET https://registry.npmjs.org/cookie/0.0.4
+1250 verbose url raw fresh/0.0.1
+1251 verbose url resolving [ 'https://registry.npmjs.org/', './fresh/0.0.1' ]
+1252 verbose url resolved https://registry.npmjs.org/fresh/0.0.1
+1253 http GET https://registry.npmjs.org/fresh/0.0.1
+1254 verbose url raw bytes/0.0.1
+1255 verbose url resolving [ 'https://registry.npmjs.org/', './bytes/0.0.1' ]
+1256 verbose url resolved https://registry.npmjs.org/bytes/0.0.1
+1257 http GET https://registry.npmjs.org/bytes/0.0.1
+1258 verbose cache add [ 'qs@0.4.2', null ]
+1259 silly cache add name=undefined spec="qs@0.4.2" args=["qs@0.4.2",null]
+1260 verbose parsed url { pathname: 'qs@0.4.2', path: 'qs@0.4.2', href: 'qs@0.4.2' }
+1261 silly cache add name="qs" spec="0.4.2" args=["qs","0.4.2"]
+1262 verbose parsed url { pathname: '0.4.2', path: '0.4.2', href: '0.4.2' }
+1263 verbose addNamed [ 'qs', '0.4.2' ]
+1264 verbose addNamed [ '0.4.2', '0.4.2' ]
+1265 verbose cache add [ 'mime@1.2.4', null ]
+1266 silly cache add name=undefined spec="mime@1.2.4" args=["mime@1.2.4",null]
+1267 verbose parsed url { pathname: 'mime@1.2.4',
+1267 verbose parsed url   path: 'mime@1.2.4',
+1267 verbose parsed url   href: 'mime@1.2.4' }
+1268 silly cache add name="mime" spec="1.2.4" args=["mime","1.2.4"]
+1269 verbose parsed url { pathname: '1.2.4', path: '1.2.4', href: '1.2.4' }
+1270 verbose addNamed [ 'mime', '1.2.4' ]
+1271 verbose addNamed [ '1.2.4', '1.2.4' ]
+1272 verbose url raw qs/0.4.2
+1273 verbose url resolving [ 'https://registry.npmjs.org/', './qs/0.4.2' ]
+1274 verbose url resolved https://registry.npmjs.org/qs/0.4.2
+1275 http GET https://registry.npmjs.org/qs/0.4.2
+1276 verbose url raw mime/1.2.4
+1277 verbose url resolving [ 'https://registry.npmjs.org/', './mime/1.2.4' ]
+1278 verbose url resolved https://registry.npmjs.org/mime/1.2.4
+1279 verbose etag "7WLVRUYMHID3S4PH9UYQWSPCG"
+1280 http GET https://registry.npmjs.org/mime/1.2.4
+1281 http 200 https://registry.npmjs.org/qs/0.4.2
+1282 silly registry.get cb [ 200,
+1282 silly registry.get   { vary: 'Accept',
+1282 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+1282 silly registry.get     etag: '"43Z3QIEP9ITOF432D840KLR67"',
+1282 silly registry.get     date: 'Tue, 03 Jul 2012 21:44:00 GMT',
+1282 silly registry.get     'content-type': 'application/json',
+1282 silly registry.get     'content-length': '731' } ]
+1283 verbose addRemoteTarball [ 'https://registry.npmjs.org/qs/-/qs-0.4.2.tgz',
+1283 verbose addRemoteTarball   '3cac4c861e371a8c9c4770ac23cda8de639b8e5f' ]
+1284 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840331-0.6206656396389008/tmp.tgz
+1285 http GET https://registry.npmjs.org/qs/-/qs-0.4.2.tgz
+1286 http 200 https://registry.npmjs.org/bytes/0.0.1
+1287 silly registry.get cb [ 200,
+1287 silly registry.get   { vary: 'Accept',
+1287 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+1287 silly registry.get     etag: '"CZ06G886HYJTPXOP9ZISKI2QC"',
+1287 silly registry.get     date: 'Tue, 03 Jul 2012 21:44:00 GMT',
+1287 silly registry.get     'content-type': 'application/json',
+1287 silly registry.get     'content-length': '696' } ]
+1288 http 200 https://registry.npmjs.org/fresh/0.0.1
+1289 silly registry.get cb [ 200,
+1289 silly registry.get   { vary: 'Accept',
+1289 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+1289 silly registry.get     etag: '"A45VIPQLM2LXS5XJT58TAEDUY"',
+1289 silly registry.get     date: 'Tue, 03 Jul 2012 21:44:00 GMT',
+1289 silly registry.get     'content-type': 'application/json',
+1289 silly registry.get     'content-length': '699' } ]
+1290 http 200 https://registry.npmjs.org/cookie/0.0.4
+1291 silly registry.get cb [ 200,
+1291 silly registry.get   { vary: 'Accept',
+1291 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+1291 silly registry.get     etag: '"CFVU1H4T2K61GUC9IICFQP1NF"',
+1291 silly registry.get     date: 'Tue, 03 Jul 2012 21:44:00 GMT',
+1291 silly registry.get     'content-type': 'application/json',
+1291 silly registry.get     'content-length': '793' } ]
+1292 http 200 https://registry.npmjs.org/formidable/1.0.11
+1293 silly registry.get cb [ 200,
+1293 silly registry.get   { vary: 'Accept',
+1293 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+1293 silly registry.get     etag: '"C3S727FNN7R8T0DHNMGNG38ED"',
+1293 silly registry.get     date: 'Tue, 03 Jul 2012 21:44:00 GMT',
+1293 silly registry.get     'content-type': 'application/json',
+1293 silly registry.get     'content-length': '11652' } ]
+1294 verbose addRemoteTarball [ 'https://registry.npmjs.org/fresh/-/fresh-0.0.1.tgz',
+1294 verbose addRemoteTarball   'f98a0a1b9001b6e227fb9c65ff3927bdb7b404fa' ]
+1295 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840401-0.17855479894205928/tmp.tgz
+1296 verbose addRemoteTarball [ 'https://registry.npmjs.org/cookie/-/cookie-0.0.4.tgz',
+1296 verbose addRemoteTarball   '5456bd47aee2666eac976ea80a6105940483fe98' ]
+1297 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840406-0.4818242338951677/tmp.tgz
+1298 http GET https://registry.npmjs.org/fresh/-/fresh-0.0.1.tgz
+1299 verbose addRemoteTarball [ 'https://registry.npmjs.org/bytes/-/bytes-0.0.1.tgz',
+1299 verbose addRemoteTarball   '2a76c866ba90e6fd2641ab5c9fdb6c4e8b4015f7' ]
+1300 verbose addRemoteTarball [ 'https://registry.npmjs.org/formidable/-/formidable-1.0.11.tgz',
+1300 verbose addRemoteTarball   '68f63325a035e644b6f7bb3d11243b9761de1b30' ]
+1301 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840409-0.1508661115076393/tmp.tgz
+1302 http GET https://registry.npmjs.org/cookie/-/cookie-0.0.4.tgz
+1303 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840410-0.7960958878975362/tmp.tgz
+1304 http GET https://registry.npmjs.org/formidable/-/formidable-1.0.11.tgz
+1305 http GET https://registry.npmjs.org/bytes/-/bytes-0.0.1.tgz
+1306 http 200 https://registry.npmjs.org/mime/1.2.4
+1307 silly registry.get cb [ 200,
+1307 silly registry.get   { vary: 'Accept',
+1307 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+1307 silly registry.get     etag: '"56FWBWCGHC42ZX8KXTDXMUI20"',
+1307 silly registry.get     date: 'Tue, 03 Jul 2012 21:44:00 GMT',
+1307 silly registry.get     'content-type': 'application/json',
+1307 silly registry.get     'content-length': '1010' } ]
+1308 verbose addRemoteTarball [ 'https://registry.npmjs.org/mime/-/mime-1.2.4.tgz',
+1308 verbose addRemoteTarball   '11b5fdaf29c2509255176b80ad520294f5de92b7' ]
+1309 verbose fetch to= /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840507-0.8113211067393422/tmp.tgz
+1310 http GET https://registry.npmjs.org/mime/-/mime-1.2.4.tgz
+1311 silly shasum updated bytes 10240
+1312 info shasum 3cac4c861e371a8c9c4770ac23cda8de639b8e5f
+1312 info shasum /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840331-0.6206656396389008/tmp.tgz
+1313 verbose tar unpack /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840331-0.6206656396389008/tmp.tgz
+1314 silly gunzTarPerm modes [ '755', '644' ]
+1315 silly gunzTarPerm extractEntry .gitignore
+1316 silly gunzTarPerm extractEntry .gitmodules
+1317 silly gunzTarPerm extractEntry .travis.yml
+1318 silly gunzTarPerm extractEntry benchmark.js
+1319 silly gunzTarPerm extractEntry examples.js
+1320 silly gunzTarPerm extractEntry History.md
+1321 silly gunzTarPerm extractEntry index.js
+1322 silly gunzTarPerm extractEntry Makefile
+1323 silly gunzTarPerm extractEntry package.json
+1324 silly gunzTarPerm extractEntry Readme.md
+1325 silly gunzTarPerm extractEntry lib/querystring.js
+1326 silly gunzTarPerm extractEntry test/mocha.opts
+1327 silly gunzTarPerm extractEntry test/parse.js
+1328 silly gunzTarPerm extractEntry test/stringify.js
+1329 verbose read json /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840331-0.6206656396389008/package/package.json
+1330 verbose from cache /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840331-0.6206656396389008/package/package.json
+1331 verbose tar pack [ '/Users/rcameron/.npm/qs/0.4.2/package.tgz',
+1331 verbose tar pack   '/var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840331-0.6206656396389008/package' ]
+1332 verbose tarball /Users/rcameron/.npm/qs/0.4.2/package.tgz
+1333 verbose folder /var/folders/f1/g4qbw4j514l4p888dzh6rs6r0000gp/T/npm-1341351835724/1341351840331-0.6206656396389008/package
+1334 error Error: EIO, open '/Users/rcameron/.npm/qs/0.4.2/package.tgz'
+1334 error  { [Error: EIO, open '/Users/rcameron/.npm/qs/0.4.2/package.tgz']
+1334 error   errno: 55,
+1334 error   code: 'EIO',
+1334 error   path: '/Users/rcameron/.npm/qs/0.4.2/package.tgz' }
+1335 error You may report this log at:
+1335 error     <http://github.com/isaacs/npm/issues>
+1335 error or email it to:
+1335 error     <npm-@googlegroups.com>
+1336 error System Darwin 11.4.0
+1337 error command "node" "/usr/local/bin/npm" "install" "express"
+1338 error cwd /Volumes/Spinner/Dropbox/Development Projects/loghog-forwarder
+1339 error node -v v0.8.0
+1340 error npm -v 1.1.32
+1341 error path /Users/rcameron/.npm/qs/0.4.2/package.tgz
+1342 error code EIO
+1343 error message EIO, open '/Users/rcameron/.npm/qs/0.4.2/package.tgz'
+1344 error errno 55
+1345 error 55 errno
+1346 verbose exit [ 55, true ]
