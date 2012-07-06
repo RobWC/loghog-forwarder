@@ -24,14 +24,16 @@ var server = tls.createServer(options, function(cleartextStream) {
       var array = data.split('::::');
       for (var i in array) {
         if (array[i].length > 1) {
-          var value = JSON.parse(array[i]);
-          console.log(value);
+          try {
+            var value = JSON.parse(array[i]);
+            console.log(value); 
+          } catch (err) {
+            
+          }
         }
       }
     } else {
-      var parData = data.split('::::')
-      var value = JSON.parse(parData[0]);
-      console.log(value);
+      //do nothing as data isnt complete 
     };
 
   });

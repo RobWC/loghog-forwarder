@@ -2,6 +2,10 @@ var tls = require('tls');
 var fs = require('fs');
 
 var listeners = new Object();
+var retryCount = 10;
+var retryInterval = 15000;
+var retryIntervalCounter = null;
+var tlsClient;
 
 var options = {
   // These are necessary only if using the client certificate authentication
@@ -12,25 +16,35 @@ var options = {
   ca: [ fs.readFileSync('./keys/ca.crt') ]
 };
 
-var tlsClient = tls.connect(8000, options, function() {
-  console.log('client connected', tlsClient.authorized ? 'authorized' : 'unauthorized');
-  tlsClient.setEncoding('utf8');
-  var recieverCfgBuff = fs.readFileSync('./tls-client.cfg');
-  recCfg = JSON.parse(recieverCfgBuff.toString());
-  startListener(recCfg,tlsClient);
-});
+var connect = function() {
+  tlsClient = tls.connect(8000, options, function() {
+    console.log('client connected', tlsClient.authorized ? 'authorized' : 'unauthorized');
+    if (!!retryIntervalCounter) {
+      clearInterval(retryIntervalCounter);
+      retryIntervalCounter = null;
+    }
+    tlsClient.setEncoding('utf8');
+    var recieverCfgBuff = fs.readFileSync('./tls-client.cfg');
+    recCfg = JSON.parse(recieverCfgBuff.toString());
+    startListener(recCfg,tlsClient);
+  });
 
+tlsClient.on('error', function(data){
+  console.log('Connection error. Restarting...');
+  //setInterval(connect,retryInterval);
+});
 
 tlsClient.on('data', function(data) {
   console.log(data);
 });
 
 tlsClient.on('end', function() {
-  server.close();
+  //lost connections come here
+  console.log('Connection ended. Restarting...');
+  retryIntervalCounter = setInterval(connect,retryInterval);
 });
 
-//configure UDP recieved
-//read in config file
+}
 
 //start listening
 
@@ -53,17 +67,24 @@ var startListener = function(config,clearTxtStream) {
           };
           
           var strMessage = JSON.stringify(message)
-          console.log(strMessage);
-          clearTxtStream.write(strMessage + '::::','utf8');
+          if (clearTxtStream.writable == true) {
+            console.log(strMessage);
+            clearTxtStream.write(strMessage + '::::','utf8');  
+          }
+          
         });
         
         server.on('listening',function(data){
           console.log('Syslog Listening on ' + config.type + ':' + config.port);
         });
         
+        if (!!listeners[config.type + ':' + config.port]) {
+          listeners[config.type + ':' + config.port].close(); 
+        }
+        
         server.bind(config.port);
         
-        listeners[config.type + ':' + config.port] = server
+        listeners[config.type + ':' + config.port] = server;
         
       } else {
         //throw error
@@ -73,3 +94,6 @@ var startListener = function(config,clearTxtStream) {
     //config is poor throw error
   }
 };
+
+
+connect();
