@@ -19,8 +19,21 @@ var server = tls.createServer(options, function(cleartextStream) {
   cleartextStream.setEncoding('utf8');
   
   cleartextStream.on('data',function(data) {
-    console.log(data.length)
-    console.log(data);
+    console.log(data.length);
+    if (data.split('::::').length > 1) {
+      var array = data.split('::::');
+      for (var i in array) {
+        if (array[i].length > 1) {
+          var value = JSON.parse(array[i]);
+          console.log(value);
+        }
+      }
+    } else {
+      var parData = data.split('::::')
+      var value = JSON.parse(parData[0]);
+      console.log(value);
+    };
+
   });
 });
 

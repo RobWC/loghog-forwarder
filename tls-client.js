@@ -54,7 +54,7 @@ var startListener = function(config,clearTxtStream) {
           
           var strMessage = JSON.stringify(message)
           console.log(strMessage);
-          clearTxtStream.write(strMessage,'utf8');
+          clearTxtStream.write(strMessage + '::::','utf8');
         });
         
         server.on('listening',function(data){
