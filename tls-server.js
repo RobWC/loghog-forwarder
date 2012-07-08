@@ -33,7 +33,6 @@ var server = tls.createServer(options, function(cleartextStream) {
         if (array[i].length > 1) {
           try {
             var value = JSON.parse(array[i]);
-            console.log(value);
             sendMessage(value.message);
           } catch (err) {
             
