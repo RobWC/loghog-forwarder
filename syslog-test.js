@@ -3,8 +3,9 @@ var date = new Date();
 var message = new Buffer("Some Data");
 var client = dgram.createSocket("udp4");
 
-function sendMessage() {
-  client.send(message, 0, message.length, 1234, "localhost");
+function sendMessage(message) {
+  buff = new Buffer(message);
+  client.send(buff, 0, buff.length, 1234, "localhost");
 };
 
-setInterval(sendMessage,1);
+setInterval(sendMessage,1,message);

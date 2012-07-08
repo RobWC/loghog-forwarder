@@ -4,7 +4,8 @@ var fs = require('fs');
 var listeners = new Object();
 var retryCount = 10;
 var retryInterval = 15000;
-var retryIntervalCounter = null;
+var retryIntervalCounterErr = null;
+var retryIntervalCounterClose = null;
 var tlsClient;
 
 var options = {
@@ -17,11 +18,15 @@ var options = {
 };
 
 var connect = function() {
-  tlsClient = tls.connect(8000, options, function() {
+  tlsClient = tls.connect(8000,'logger.junipersecurity.net', options, function() {
     console.log('client connected', tlsClient.authorized ? 'authorized' : 'unauthorized');
-    if (!!retryIntervalCounter) {
-      clearInterval(retryIntervalCounter);
-      retryIntervalCounter = null;
+    if (!!retryIntervalCounterClose) {
+      clearInterval(retryIntervalCounterClose);
+      retryIntervalCounterClose = null;
+    }
+    if (!!retryIntervalCounterErr) {
+      clearInterval(retryIntervalCounterErr);
+      retryIntervalCounterErr = null;
     }
     tlsClient.setEncoding('utf8');
     var recieverCfgBuff = fs.readFileSync('./tls-client.cfg');
@@ -31,7 +36,7 @@ var connect = function() {
 
 tlsClient.on('error', function(data){
   console.log('Connection error. Restarting...');
-  //setInterval(connect,retryInterval);
+  retryIntervalCounterErr = setInterval(connect,retryInterval);
 });
 
 tlsClient.on('data', function(data) {
@@ -41,7 +46,7 @@ tlsClient.on('data', function(data) {
 tlsClient.on('end', function() {
   //lost connections come here
   console.log('Connection ended. Restarting...');
-  retryIntervalCounter = setInterval(connect,retryInterval);
+  retryIntervalCounterClose = setInterval(connect,retryInterval);
 });
 
 }
