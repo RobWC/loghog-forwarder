@@ -59,8 +59,6 @@ var startListener = function(config,clearTxtStream) {
     if (config.type == 'tcp') {
       //TBD
     } else if (config.type == 'udp4') {
-      
-      //check port is > 1024
       if (config.port > 1024) {
         var dgram = require("dgram");
         var server = dgram.createSocket("udp4");
@@ -71,10 +69,8 @@ var startListener = function(config,clearTxtStream) {
             'message': data.toString()
           };
           
-          var strMessage = JSON.stringify(message)
           if (clearTxtStream.writable == true) {
-            console.log(strMessage);
-            clearTxtStream.write(strMessage + '::::','utf8');  
+            clearTxtStream.write(JSON.stringify(message) + '::::','utf8');  
           }
           
         });
