@@ -70,7 +70,7 @@ var startListener = function(config, clearTxtStream) {
             'message': data.toString()
           };        
           
-          if (config.compress == true) {
+          if (config.compress == false) {
             if (clearTxtStream.writable == true) {
               clearTxtStream.write(JSON.stringify(message) + '::::', 'utf8');
             }
