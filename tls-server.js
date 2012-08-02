@@ -27,6 +27,7 @@ var server = tls.createServer(options, function(cleartextStream) {
   
   cleartextStream.on('data',function(data) {
     console.log(data.length);
+    //decompress message
     if (data.split('::::').length > 1) {
       var array = data.split('::::');
       for (var i in array) {
